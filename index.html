@@ -211,6 +211,23 @@ img{display:block;max-width:100%}
 .card .ph .rk.new{background:var(--coral);color:#fff;font-size:10.5px;letter-spacing:.02em}
 .card .ph .rk.cat{background:rgba(255,255,255,.92);box-shadow:0 1px 4px rgba(12,14,20,.14);font-size:13px}
 
+/* 순위 추이 — 이 앱의 정체성. 순위는 낮을수록 좋아서 그래프 y축이 뒤집혀 있다.
+   ⚠️ 상세 시트의 '가격' 그래프가 이미 .spark를 쓰고 있어서 이름을 나눈다 */
+.rspark{display:block}
+.rspark polyline{stroke:var(--ink3)}
+.rspark circle{fill:var(--ink3)}
+.rspark.up polyline{stroke:var(--limeInk)}
+.rspark.up circle{fill:var(--limeInk)}
+.rspark.down polyline{stroke:var(--ink3)}
+.trend{display:flex;align-items:center;gap:6px;margin-top:5px}
+.trend .lb{font-size:11px;color:var(--ink3);font-weight:700;white-space:nowrap}
+/* 며칠째 상위권인지 — 반짝 등장과 스테디셀러를 구분해준다 */
+.streak{
+  display:inline-flex;align-items:center;gap:3px;margin-top:5px;padding:2px 7px;border-radius:7px;
+  background:var(--surface2);color:var(--ink2);font-size:10.5px;font-weight:800;
+}
+.streak.long{background:var(--lime);color:var(--ink)}
+
 /* ── 빈 상태 / 스켈레톤 ───────────────────────────────────── */
 .empty{padding:52px 28px;text-align:center;color:var(--ink3);font-size:13.5px;line-height:1.7}
 .empty .e{font-size:34px;margin-bottom:12px;opacity:.8}
@@ -301,10 +318,10 @@ img{display:block;max-width:100%}
 </div>
 
 <nav class="tabs" id="tabs">
-  <button data-t="today"><span class="ic">⏰</span>하루특가<em id="cTod">0</em></button>
-  <button data-t="best"><span class="ic">🏆</span>베스트<em id="cBes">0</em></button>
   <button data-t="rising"><span class="ic">🚀</span>급상승<em id="cRis">0</em></button>
+  <button data-t="best"><span class="ic">🏆</span>베스트<em id="cBes">0</em></button>
   <button data-t="cat"><span class="ic">📊</span>판매순위<em id="cCat">0</em></button>
+  <button data-t="today"><span class="ic">⏰</span>하루특가<em id="cTod">0</em></button>
   <i class="ink" id="tabInk"></i>
 </nav>
 
@@ -401,8 +418,24 @@ function reviewLine(d) {
   return `<div class="sub">⭐ ${(d.score || 0).toFixed(1)} · 리뷰 ${won(d.reviews)}</div>`;
 }
 
+// 순위가 있는 상품에는 추이 그래프와 "며칠째"를 붙인다 — 다른 앱이 못 만드는 정보다
+function trendLine(d, label) {
+  const sp = sparkline(d, 44, 16);
+  if (!sp) return "";
+  return `<div class="trend">${sp}<span class="lb">${label}</span></div>`;
+}
+
+function streakChip(d) {
+  const n = rankStreakDays(d);
+  if (n < 2) return "";
+  return `<div class="streak ${n >= 4 ? "long" : ""}">🔥 ${n}일째 100위 안</div>`;
+}
+
 function cardBest(d, i) {
-  return cardOf(d, { ...rankBadge(d.bestRank || i + 1), sub: reviewLine(d) });
+  return cardOf(d, {
+    ...rankBadge(d.bestRank || i + 1),
+    sub: trendLine(d, "순위 추이") || streakChip(d) || reviewLine(d),
+  });
 }
 
 function cardRising(d) {
@@ -410,7 +443,8 @@ function cardRising(d) {
   return cardOf(d, {
     badge: up ? `▲${d.rankDelta}` : "NEW",
     badgeCls: up ? "up" : "new",
-    sub: `<div class="sub">${d.bestRank ? `현재 ${d.bestRank}위` : ""}</div>`,
+    sub: (trendLine(d, d.bestRank ? `현재 ${d.bestRank}위` : "순위 추이")
+      || `<div class="sub">${d.bestRank ? `현재 ${d.bestRank}위` : "새로 진입"}</div>`) + streakChip(d),
   });
 }
 
@@ -532,7 +566,7 @@ function render() {
   if (tab === "best") {
     const l = listBest();
     v.innerHTML = `<div class="shd"><h2>지금 많이 팔려요</h2>
-        <p>토스쇼핑 판매 랭킹 · 매일 갱신</p></div>
+        <p>토스쇼핑 판매 랭킹 · 그래프는 최근 ${RANK_DAYS.length}번 기록한 순위 흐름</p></div>
       <div class="grid">${l.map(cardBest).join("")}</div>`;
     return;
   }
@@ -548,7 +582,8 @@ function render() {
     const fresh = l.length - up;
     const bits = [up ? `순위 상승 ${up}개` : "", fresh ? `신규 진입 ${fresh}개` : ""].filter(Boolean);
     v.innerHTML = `<div class="shd"><h2>인기급상승</h2>
-        <p>${agoLabel(CAT.deltaBaseAt) || "이전 집계 대비"} · ${bits.join(" · ")}</p></div>
+        <p>${agoLabel(CAT.deltaBaseAt) || "이전 집계 대비"} · ${bits.join(" · ")}<br>
+        순위를 매일 기록해 두고 어제와 비교해서 만든 목록이에요</p></div>
       <div class="grid">${l.map(cardRising).join("")}</div>`;
     return;
   }
@@ -652,6 +687,8 @@ function openSheet(id) {
   } else if (d.isNew) {
     facts.push(`<div class="fact"><div class="k">랭킹</div><div class="v hot">신규 진입</div></div>`);
   }
+  const streak = rankStreakDays(d);
+  if (streak >= 2) facts.push(`<div class="fact"><div class="k">100위 안</div><div class="v">${streak}일째</div></div>`);
   if (d.reviews) facts.push(`<div class="fact"><div class="k">리뷰</div><div class="v">⭐ ${(d.score || 0).toFixed(1)}</div></div>`);
   if (d.endAt) facts.push(`<div class="fact"><div class="k">남은 시간</div>
     <div class="v hot" data-end="${esc(d.endAt)}" data-cd>${hhmmss(msLeft(d))}</div></div>`);
@@ -748,6 +785,67 @@ setInterval(() => {
   }
 }, 1000);
 
+/* ── 순위 이력 ─────────────────────────────────────────────────
+   이 앱만 가진 데이터다. 쉐어링크 API는 "지금 몇 위"만 주고 과거를 주지 않아서,
+   sync.py가 실행할 때마다 베스트 100의 순위를 rank-history.json에 스냅샷으로 쌓는다.
+   여기서 상품별 시계열로 뒤집어, 추이 그래프와 "며칠째 100위 안" 배지를 만든다. */
+let RANK = {};        // id → [{at, r}]  (오래된 것부터)
+let RANK_DAYS = [];   // 스냅샷이 있는 날짜들(오래된 것부터, 중복 제거)
+
+function buildRankSeries(hist) {
+  RANK = {};
+  const snaps = (hist && hist.snapshots) || [];
+  RANK_DAYS = [...new Set(snaps.map((s) => (s.at || "").slice(0, 10)))].sort();
+  snaps.forEach((s) => {
+    Object.entries(s.ranks || {}).forEach(([id, r]) => {
+      (RANK[id] || (RANK[id] = [])).push({ at: s.at, r: Number(r) });
+    });
+  });
+}
+
+const rankSeries = (d) => RANK[d.id] || RANK[String(d.tacaItemId)] || [];
+
+// "N일째 100위 안" — 가장 최근 기록일부터 거꾸로 **끊기지 않고** 이어진 날만 센다.
+// 그냥 등장한 날을 세면 8/06과 8/14에 한 번씩 뜬 상품이 "2일째"가 되어 거짓말이 된다.
+// 하루에 두 번 동기화한 날이 있어서 스냅샷 개수가 아니라 날짜로 센다.
+// "달력상 하루씩" 이어져야 N일째라고 말할 수 있다. 집계를 건너뛴 날이 있으면
+// (동기화 실패·쿼터 소진) 거기서 끊는다 — 8/07과 8/11을 이어 붙여 "2일째"라고 하면 거짓말이다.
+function rankStreakDays(d) {
+  const days = new Set(rankSeries(d).map((x) => x.at.slice(0, 10)));
+  if (!days.size) return 0;
+  const dayNum = (s) => Math.round(Date.parse(`${s}T00:00:00Z`) / 86400000);
+  let n = 0;
+  let prev = null;
+  for (let i = RANK_DAYS.length - 1; i >= 0; i -= 1) {
+    const day = RANK_DAYS[i];
+    if (!days.has(day)) break;
+    if (prev !== null && dayNum(prev) - dayNum(day) !== 1) break;
+    prev = day;
+    n += 1;
+  }
+  return n;
+}
+
+// 작은 추이 그래프. 순위는 낮을수록 좋으니 y축을 뒤집는다.
+function sparkline(d, w, h) {
+  const s = rankSeries(d);
+  if (s.length < 3) return "";
+  const rs = s.map((x) => x.r);
+  const min = Math.min(...rs), max = Math.max(...rs);
+  const span = Math.max(max - min, 1);
+  const pts = rs.map((r, i) => {
+    const x = (i / (rs.length - 1)) * (w - 2) + 1;
+    const y = ((r - min) / span) * (h - 4) + 2;   // 1위(작은 값)가 위로 오게
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+  const last = rs[rs.length - 1], first = rs[0];
+  const cls = last < first ? "up" : (last > first ? "down" : "flat");
+  return `<svg class="rspark ${cls}" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" aria-hidden="true">
+    <polyline points="${pts}" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="${(w - 1).toFixed(1)}" cy="${(((last - min) / span) * (h - 4) + 2).toFixed(1)}" r="1.9"/>
+  </svg>`;
+}
+
 /* ── 로드 ──────────────────────────────────────────────────── */
 async function loadJson(name) {
   if (REMOTE && !IS_LOCAL) {
@@ -759,8 +857,11 @@ async function loadJson(name) {
 }
 
 async function boot() {
-  const [cat, prices] = await Promise.all([loadJson("catalog.json"), loadJson("price-history.json")]);
+  const [cat, prices, ranks] = await Promise.all([
+    loadJson("catalog.json"), loadJson("price-history.json"), loadJson("rank-history.json"),
+  ]);
   PRICES = prices || {};
+  buildRankSeries(ranks);
 
   if (!cat || !cat.items || !cat.items.length) {
     $("#view").innerHTML = emptyBox("아직 데이터가 없어요",
@@ -781,8 +882,9 @@ async function boot() {
   $("#cCat").textContent = (cat.categories || []).length;
 
   paintSavedCount();
-  // 하루특가 편성이 없는 날엔 베스트를 첫 화면으로
-  setTab(listToday().length ? "today" : "best");
+  // 이 앱의 중심은 순위다. 급상승을 첫 화면으로 두고,
+  // 스냅샷이 아직 두 번 안 쌓여 급상승이 비는 날에만 베스트로 넘어간다.
+  setTab(listRising().length ? "rising" : "best");
 }
 boot();
 </script>
