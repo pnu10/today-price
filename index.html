@@ -27,6 +27,8 @@
   --r:16px;
   --pad:16px;
   --top:calc(env(safe-area-inset-top,0px));
+  /* .tabs가 붙을 높이 = .top의 실제 높이. JS가 재서 덮어쓰고, 아래 값은 그 전까지의 기본값 */
+  --headH:calc(52px + env(safe-area-inset-top,0px));
   --bot:calc(env(safe-area-inset-bottom,0px));
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -46,9 +48,13 @@ img{display:block;max-width:100%}
 .hide{display:none!important}
 
 /* ── 상단 바 ───────────────────────────────────────────────── */
+/* ⚠️ 스티키 헤더는 배경이 불투명해야 한다. 예전엔 아래쪽이 투명해지는 그라데이션이라
+   스크롤하면 상품 목록이 로고·탭을 뚫고 비쳐 보였다.
+   그리고 .tabs가 붙는 높이(--headH)는 .top의 실제 높이와 같아야 한다 —
+   숫자를 손으로 적어두면 헤더가 조금만 바뀌어도 6px씩 겹친다. 그래서 JS가 재어 넣는다. */
 .top{
   position:sticky;top:0;z-index:40;padding:calc(10px + var(--top)) var(--pad) 8px;
-  background:linear-gradient(var(--bg) 72%,rgba(8,9,12,0));
+  background:var(--bg);
   display:flex;align-items:center;gap:10px;
 }
 .logo{display:flex;align-items:baseline;font-weight:900;font-size:19px;letter-spacing:-.05em;white-space:nowrap}
@@ -92,7 +98,7 @@ img{display:block;max-width:100%}
 
 /* ── 탭 ───────────────────────────────────────────────────── */
 .tabs{
-  position:sticky;top:calc(46px + var(--top));z-index:39;background:var(--bg);
+  position:sticky;top:var(--headH);z-index:39;background:var(--bg);
   padding:2px var(--pad) 0;display:flex;gap:2px;
   border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;
 }
@@ -580,7 +586,15 @@ function moveInk() {
   ink.style.transform = `translateX(${on.offsetLeft}px)`;
 }
 document.querySelectorAll("#tabs button").forEach((b) => { b.onclick = () => setTab(b.dataset.t); });
-window.addEventListener("resize", moveInk);
+
+// 탭이 붙을 높이를 헤더 실제 높이에 맞춘다(안 맞으면 스크롤할 때 목록이 헤더를 뚫고 겹친다).
+// 검색창을 열고 닫으면 헤더 아래 내용이 바뀌므로 그때도 다시 잰다.
+function syncHeadHeight() {
+  const h = document.querySelector(".top").offsetHeight;
+  document.documentElement.style.setProperty("--headH", `${h}px`);
+}
+window.addEventListener("resize", () => { moveInk(); syncHeadHeight(); });
+syncHeadHeight();
 
 /* ── 검색 ──────────────────────────────────────────────────── */
 $("#btnSearch").onclick = () => {
