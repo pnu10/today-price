@@ -92,13 +92,8 @@ python3 -m http.server 4336 --directory .
 
 ## 앱인토스 배포
 
-⚠️ **이 맥에 node가 설치돼 있지 않다.** `ait`가 node로 돌아가므로 배포 전에 먼저:
-
-```bash
-brew install node && npm install
-```
-
-그다음:
+node는 설치돼 있다(v24). 다운로드 사본으로 받은 `node_modules`는 rollup·esbuild 네이티브
+바이너리가 깨져 있어 빌드가 죽으므로, 그럴 땐 `rm -rf node_modules && npm install`로 되살린다.
 
 ```bash
 npm run build   # vite build → catalog.json 복사 → ait build
@@ -117,20 +112,45 @@ npm run deploy
 
 ## 자동 동기화 (launchd)
 
-`com.todayprice.sync` — **매일 16:20 로컬**(= KST 00:20)에 `sync.py`를 한 번 돌린다.
+`com.todayprice.sync` — **매일 17:20 로컬**(암스테르담)에 `sync.py`를 한 번 돌린다.
+여름(CEST)엔 KST 00:20, 겨울(CET)엔 KST 01:20 — 서머타임이 바뀌어도 항상 **KST 자정 이후**다.
 하루특가 편성과 API 쿼터 리셋이 둘 다 KST 자정에 일어나서, 그 직후가 가장 좋은 타이밍이다.
+
+동기화가 끝나면 `catalog.json`·`price-history.json`·`rank-history.json`을 GitHub Pages로
+커밋·푸시한다. 앱은 `REMOTE`로 그걸 읽으므로 **앱 재배포 없이 딜이 갱신된다.**
+
+```
+https://pnu10.github.io/today-price/catalog.json
+```
 
 ```bash
 launchctl print gui/$UID/com.todayprice.sync | grep -E 'state|runs|last exit'
 launchctl kickstart -p gui/$UID/com.todayprice.sync   # 즉시 실행
-tail -20 ~/apps/today-price/sync.log
+tail -20 "~/Desktop/토스/today-price/sync.log"
 ```
 
 끄려면 `launchctl bootout gui/$UID/com.todayprice.sync`.
+plist 사본이 프로젝트에도 있지만, 실제로 도는 건 `~/Library/LaunchAgents/`에 있는 쪽이다.
 
-**⚠️ 이 프로젝트가 `~/Downloads`에 있으면 안 된다.** macOS TCC가 백그라운드 launchd 작업의
-`~/Downloads`·`~/Desktop`·`~/Documents` 접근을 막아서, 스크립트를 읽지도 못하고
-`Operation not permitted`로 죽는다(터미널에서 직접 돌릴 땐 잘 된다). 그래서 `~/apps`에 둔다.
+**⚠️ launchd + `~/Desktop`은 바이너리 권한(TCC)을 탄다.** 백그라운드 launchd 작업은
+`~/Desktop`·`~/Downloads`·`~/Documents`를 아무 프로그램으로나 못 읽는다. 실측(2026-08-14):
+
+| 실행 파일 | 결과 |
+| --- | --- |
+| `/usr/bin/python3` (Xcode) | ❌ `Operation not permitted` — sync.py를 열지도 못함 |
+| `/opt/homebrew/bin/python3` | ✅ 정상 |
+
+그래서 plist는 **홈브루 python**을 쓴다. 터미널에서 직접 돌릴 땐 둘 다 되니 헷갈리기 쉽다.
+프로젝트를 `~/apps` 같은 비보호 경로로 옮기면 이 제약 자체가 사라진다.
+
+**⚠️ 격리 속성(quarantine)이 붙은 파일은 launchd가 못 연다.** AirDrop·다운로드로 받은
+폴더를 그대로 쓰면 `sync.log`에 `com.apple.quarantine`이 남아 있고, launchd가 이 파일을
+stdout으로 열지 못해 **로그 한 줄 없이 `EX_CONFIG(78)`로 죽는다.** 증상이 설정 오류처럼
+보여서 원인을 찾기 어렵다. 이럴 땐:
+
+```bash
+xattr -dr com.apple.quarantine .
+```
 
 **⚠️ 하루 한 번인 이유 — 실측 쿼터.** 2026-08-13에 풀 동기화 한 번(상품 502개)으로
 일일 쿼터가 소진됐다. 문서의 "10,000개"와 다르니 두 번째 실행을 걸어도 QUOTA_EXCEEDED로 죽는다.
