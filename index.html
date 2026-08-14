@@ -97,13 +97,16 @@ img{display:block;max-width:100%}
   border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;
 }
 .tabs::-webkit-scrollbar{display:none}
+/* 탭 4개가 375px에 다 들어와야 한다 — 넘치면 마지막 '판매순위'가 화면 밖으로 밀려
+   있는 줄도 모르게 된다. 그래서 가로 스크롤 대신 4등분해서 꽉 채운다. */
 .tabs button{
-  position:relative;padding:11px 12px 13px;color:var(--ink3);font-weight:700;font-size:14.5px;
-  white-space:nowrap;transition:color .15s;
+  position:relative;flex:1;padding:11px 2px 13px;color:var(--ink3);font-weight:700;font-size:13px;
+  white-space:nowrap;transition:color .15s;letter-spacing:-.04em;
 }
+.tabs button .ic{font-size:12px;margin-right:2px}
 .tabs button.on{color:var(--ink)}
 .tabs button em{
-  font-style:normal;font-size:11.5px;font-weight:800;margin-left:5px;
+  font-style:normal;font-size:11px;font-weight:800;margin-left:3px;
   color:var(--ink3);font-variant-numeric:tabular-nums;
 }
 .tabs button.on em{color:var(--limeInk)}
@@ -134,22 +137,8 @@ img{display:block;max-width:100%}
   font-variant-numeric:tabular-nums;
 }
 
-/* ── 리스트 행 (베스트·급상승·하루특가 공용) ───────────────── */
-.rows{padding:2px var(--pad) 8px}
-.row{
-  display:flex;align-items:center;gap:12px;padding:11px 0;
-  border-bottom:1px solid var(--line);transition:opacity .12s;
-}
-.row:active{opacity:.55}
-.row:last-child{border-bottom:0}
-.row .rk{
-  width:30px;flex:none;text-align:center;font-size:18px;font-weight:900;
-  color:var(--ink3);letter-spacing:-.06em;font-variant-numeric:tabular-nums;
-}
-.row .rk.top{color:var(--ink);font-size:22px}
-.row .rk.top1{
-  background:var(--lime);border-radius:9px;padding:2px 0;
-}
+/* ── 썸네일 ───────────────────────────────────────────────── */
+/* 목록은 전부 .grid 카드다. 이 썸네일은 상세 시트에서만 쓴다 */
 .th{
   width:66px;height:66px;flex:none;border-radius:13px;overflow:hidden;
   background:var(--surface2);position:relative;
@@ -157,48 +146,21 @@ img{display:block;max-width:100%}
   box-shadow:inset 0 0 0 1px var(--line);
 }
 .th img{width:100%;height:100%;object-fit:cover}
-.row .info{flex:1;min-width:0}
-.row .bd{font-size:11.5px;color:var(--ink3);font-weight:600;margin-bottom:1px}
-.row .nm{
-  font-size:14px;font-weight:600;color:var(--ink);line-height:1.32;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
-}
-.row .pr{display:flex;align-items:baseline;gap:6px;margin-top:5px}
-.row .pr .dc{color:var(--coral);font-weight:900;font-size:14.5px;font-variant-numeric:tabular-nums}
-.row .pr .won{font-weight:800;font-size:15.5px;font-variant-numeric:tabular-nums}
-.row .pr .orig{
-  font-size:11.5px;color:var(--ink3);text-decoration:line-through;font-variant-numeric:tabular-nums;
-}
-.row .sub{margin-top:3px;font-size:11.5px;color:var(--ink3);display:flex;gap:7px;align-items:center}
-
-/* 급상승 배지 */
-.delta{
-  flex:none;display:flex;flex-direction:column;align-items:center;gap:1px;
-  min-width:44px;
-}
-.delta .v{
-  font-size:15px;font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;
-  color:var(--limeInk);
-}
-.delta .c{font-size:10px;color:var(--ink3);font-weight:700}
-.delta.new .v{color:var(--coral);font-size:11.5px;letter-spacing:.02em}
 
 /* 하루특가 남은 시간 게이지 */
 .gauge{margin-top:6px;height:3px;border-radius:2px;background:var(--surface2);overflow:hidden}
 .gauge i{display:block;height:100%;background:var(--sky);border-radius:2px;transition:width .5s linear}
 .gauge.soon i{background:var(--coral)}
-.row .left{font-size:11.5px;font-weight:700;color:var(--sky);font-variant-numeric:tabular-nums}
-.row .left.soon{color:var(--coral)}
 
 /* ── 카테고리 ─────────────────────────────────────────────── */
+/* 카테고리 17개(전체 + 1차 16개)를 가로 스크롤로 두면 뒤쪽이 안 보인다.
+   접어서 한눈에 다 보이게 한다 — 스크롤 없이 골라야 탐색이 된다. */
 .rail{
-  display:flex;gap:7px;overflow-x:auto;padding:12px var(--pad) 4px;
-  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  display:flex;flex-wrap:wrap;gap:6px;padding:12px var(--pad) 4px;
 }
-.rail::-webkit-scrollbar{display:none}
 .rail button{
-  flex:none;padding:8px 13px;border-radius:999px;background:var(--surface);
-  border:1px solid var(--line);font-size:13.5px;font-weight:700;color:var(--ink2);
+  flex:none;padding:7px 11px;border-radius:999px;background:var(--surface);
+  border:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--ink2);
   transition:transform .12s;
 }
 .rail button:active{transform:scale(.94)}
@@ -216,11 +178,32 @@ img{display:block;max-width:100%}
   font-size:11px;font-weight:900;padding:3px 7px;border-radius:7px;font-variant-numeric:tabular-nums;
 }
 .card .bd{padding:10px 11px 12px}
+.card .bd .brand{font-size:11px;color:var(--ink3);font-weight:600;margin-bottom:2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card .bd .nm{
   font-size:13px;line-height:1.34;color:var(--ink2);height:2.68em;overflow:hidden;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
 }
 .card .bd .pr{margin-top:6px;font-weight:800;font-size:15px;font-variant-numeric:tabular-nums}
+/* 카드 안 가격줄 — 행(.row)과 같은 클래스를 쓰되 폭이 좁아 한 줄에 넣는다 */
+.card .bd .pr{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}
+.card .bd .pr .dc{color:var(--coral);font-weight:900;font-size:14px;font-variant-numeric:tabular-nums}
+.card .bd .pr .won{font-weight:800;font-size:15px;font-variant-numeric:tabular-nums}
+.card .bd .pr .orig{font-size:11px;color:var(--ink3);text-decoration:line-through;font-variant-numeric:tabular-nums}
+.card .bd .sub{margin-top:4px;font-size:11px;color:var(--ink3);display:flex;gap:5px;align-items:center}
+.card .bd .sub .left{font-weight:700;color:var(--sky);font-variant-numeric:tabular-nums}
+.card .bd .sub .left.soon{color:var(--coral)}
+/* 순위·급상승 배지 — 사진 위 오른쪽 위 */
+.card .ph .rk{
+  position:absolute;right:8px;top:8px;min-width:24px;height:24px;padding:0 6px;
+  border-radius:8px;background:rgba(12,14,20,.62);color:#fff;
+  font-size:12.5px;font-weight:900;display:grid;place-items:center;
+  font-variant-numeric:tabular-nums;letter-spacing:-.03em;backdrop-filter:blur(4px);
+}
+.card .ph .rk.top{background:var(--lime);color:var(--ink)}
+.card .ph .rk.up{background:var(--limeInk);color:#fff;letter-spacing:0}
+.card .ph .rk.new{background:var(--coral);color:#fff;font-size:10.5px;letter-spacing:.02em}
+.card .ph .rk.cat{background:rgba(255,255,255,.92);box-shadow:0 1px 4px rgba(12,14,20,.14);font-size:13px}
 
 /* ── 빈 상태 / 스켈레톤 ───────────────────────────────────── */
 .empty{padding:52px 28px;text-align:center;color:var(--ink3);font-size:13.5px;line-height:1.7}
@@ -312,10 +295,10 @@ img{display:block;max-width:100%}
 </div>
 
 <nav class="tabs" id="tabs">
-  <button data-t="today">⏰ 하루특가<em id="cTod">0</em></button>
-  <button data-t="best">🏆 베스트<em id="cBes">0</em></button>
-  <button data-t="rising">🚀 인기급상승<em id="cRis">0</em></button>
-  <button data-t="cat">📊 판매순위<em id="cCat">0</em></button>
+  <button data-t="today"><span class="ic">⏰</span>하루특가<em id="cTod">0</em></button>
+  <button data-t="best"><span class="ic">🏆</span>베스트<em id="cBes">0</em></button>
+  <button data-t="rising"><span class="ic">🚀</span>급상승<em id="cRis">0</em></button>
+  <button data-t="cat"><span class="ic">📊</span>판매순위<em id="cCat">0</em></button>
   <i class="ink" id="tabInk"></i>
 </nav>
 
@@ -400,9 +383,6 @@ const listCat = () => {
 const listSaved = () => CAT.items.filter((d) => saved.includes(d.id));
 
 /* ── 조각 렌더러 ───────────────────────────────────────────── */
-function thumb(d) {
-  return `<div class="th">${d.img ? `<img src="${esc(d.img)}" alt="" loading="lazy">` : ""}</div>`;
-}
 function priceLine(d) {
   return `<div class="pr">
     ${d.dc > 0 ? `<span class="dc">${d.dc}%</span>` : ""}
@@ -415,66 +395,79 @@ function reviewLine(d) {
   return `<div class="sub">⭐ ${(d.score || 0).toFixed(1)} · 리뷰 ${won(d.reviews)}</div>`;
 }
 
-function rowBest(d, i) {
-  const n = d.bestRank || i + 1;
-  const cls = n <= 3 ? (n === 1 ? "rk top top1" : "rk top") : "rk";
-  return `<div class="row" onclick="openSheet('${d.id}')">
-    <div class="${cls} num">${n}</div>
-    ${thumb(d)}
-    <div class="info">
-      ${d.brand ? `<div class="bd">${esc(d.brand)}</div>` : ""}
-      <div class="nm">${esc(d.name)}</div>
-      ${priceLine(d)}${reviewLine(d)}
-    </div>
-  </div>`;
+function cardBest(d, i) {
+  return cardOf(d, { ...rankBadge(d.bestRank || i + 1), sub: reviewLine(d) });
 }
 
-function rowRising(d) {
+function cardRising(d) {
   const up = d.rankDelta > 0;
-  return `<div class="row" onclick="openSheet('${d.id}')">
-    <div class="delta ${up ? "" : "new"}">
-      <div class="v num">${up ? `▲${d.rankDelta}` : "NEW"}</div>
-      <div class="c">${d.bestRank ? `${d.bestRank}위` : ""}</div>
-    </div>
-    ${thumb(d)}
-    <div class="info">
-      ${d.brand ? `<div class="bd">${esc(d.brand)}</div>` : ""}
-      <div class="nm">${esc(d.name)}</div>
-      ${priceLine(d)}${reviewLine(d)}
-    </div>
-  </div>`;
+  return cardOf(d, {
+    badge: up ? `▲${d.rankDelta}` : "NEW",
+    badgeCls: up ? "up" : "new",
+    sub: `<div class="sub">${d.bestRank ? `현재 ${d.bestRank}위` : ""}</div>`,
+  });
+}
+
+// 토스 1차 카테고리명은 칩에 쓰기엔 길다("패션의류잡화"). 칩에서만 줄여 쓰고,
+// 섹션 헤더("패션의류잡화 판매순위")에는 원래 이름을 그대로 둔다.
+const CAT_SHORT = {
+  "패션의류잡화": "패션", "출산/유아동": "출산육아", "가전/디지털": "가전",
+  "반려/애완용품": "반려", "스포츠/레져": "스포츠", "가구/홈데코": "홈데코",
+  "문구/오피스": "문구", "음반/DVD": "음반", "완구/취미": "완구",
+  "여행/취미": "여행", "자동차용품": "자동차", "주방용품": "주방", "생활용품": "생활",
+};
+const shortCat = (n) => CAT_SHORT[n] || n;
+
+// 판매순위의 catRank는 "그 카테고리 안에서의 순위"다. '전체'로 보면 16개 카테고리의
+// 1위가 나란히 놓여 순위 배지가 온통 1이 된다. 그래서 전체에서는 순위 대신
+// 어느 카테고리의 몇 위인지를 보여주고, 카테고리를 고르면 그때 순위 숫자를 쓴다.
+function cardCat(d, i, cats) {
+  const c = cats.find((x) => x.id === d.catId) || {};
+  const rank = d.catRank || i + 1;
+  if (curCat) return cardOf(d, { ...rankBadge(rank), sub: reviewLine(d) });
+  return cardOf(d, {
+    badge: c.emoji || "🛍️",
+    badgeCls: "cat",
+    sub: `<div class="sub">${esc(c.name || "")} ${rank}위</div>`,
+  });
 }
 
 // 하루특가는 보통 그날 자정에 다 같이 끝나서 endAt이 전부 같다.
-// 그럴 땐 행마다 똑같은 카운트다운을 85번 찍는 게 소음이라 상단 배너 하나로만 보여주고,
-// 마감 시각이 제각각인 날에만 행에도 남은 시간을 붙인다.
-function rowToday(d, i, showTimer) {
+// 그럴 땐 카드마다 똑같은 카운트다운을 85번 찍는 게 소음이라 상단 배너 하나로만 보여주고,
+// 마감 시각이 제각각인 날에만 카드에도 남은 시간을 붙인다.
+function cardToday(d, i, showTimer) {
   const left = msLeft(d);
   const soon = left < 2 * 3600 * 1000;
-  const timer = showTimer
-    ? `<div class="sub"><span class="left ${soon ? "soon" : ""} num" data-cd>${hhmmss(left)}</span> 남음</div>`
-    : reviewLine(d);
-  const n = i + 1;
-  const cls = n <= 3 ? (n === 1 ? "rk top top1" : "rk top") : "rk";
-  return `<div class="row" onclick="openSheet('${d.id}')" data-end="${esc(d.endAt)}">
-    <div class="${cls} num">${n}</div>
-    ${thumb(d)}
-    <div class="info">
-      ${d.brand ? `<div class="bd">${esc(d.brand)}</div>` : ""}
+  return cardOf(d, {
+    ...rankBadge(i + 1),
+    end: d.endAt,
+    sub: showTimer
+      ? `<div class="sub"><span class="left ${soon ? "soon" : ""} num" data-cd>${hhmmss(left)}</span> 남음</div>`
+      : reviewLine(d),
+  });
+}
+
+// 목록은 전부 이 카드 하나로 그린다(한 화면에 2×2).
+// opts.badge  — 사진 위 오른쪽 배지: 순위 숫자 / ▲N / NEW
+// opts.sub    — 가격 아래 한 줄: 남은 시간이나 리뷰
+function cardOf(d, opts) {
+  const o = opts || {};
+  const badge = o.badge
+    ? `<span class="rk ${o.badgeCls || ""} num">${o.badge}</span>` : "";
+  return `<div class="card" onclick="openSheet('${d.id}')"${o.end ? ` data-end="${esc(o.end)}"` : ""}>
+    <div class="ph">${d.img ? `<img src="${esc(d.img)}" alt="" loading="lazy">` : ""}
+      ${d.dc > 0 ? `<span class="tag num">${d.dc}%</span>` : ""}${badge}</div>
+    <div class="bd">
+      ${d.brand ? `<div class="brand">${esc(d.brand)}</div>` : ""}
       <div class="nm">${esc(d.name)}</div>
-      ${priceLine(d)}${timer}
+      ${priceLine(d)}
+      ${o.sub || ""}
     </div>
   </div>`;
 }
 
-function cardOf(d) {
-  return `<div class="card" onclick="openSheet('${d.id}')">
-    <div class="ph">${d.img ? `<img src="${esc(d.img)}" alt="" loading="lazy">` : ""}
-      ${d.dc > 0 ? `<span class="tag num">${d.dc}%</span>` : ""}</div>
-    <div class="bd"><div class="nm">${esc(d.name)}</div>
-      <div class="pr num">${won(d.price)}원</div></div>
-  </div>`;
-}
+// 순위 배지: 1~3위만 라임색으로 눈에 띄게
+const rankBadge = (n) => ({ badge: n, badgeCls: n <= 3 ? "top" : "" });
 
 function emptyBox(title, desc, emoji) {
   return `<div class="empty"><div class="e">${emoji}</div><b>${title}</b>${desc}</div>`;
@@ -526,7 +519,7 @@ function render() {
       </div>
       <div class="shd"><h2>오늘 지나면 끝나요</h2>
         <p>${many ? "끝나는 순서대로" : "할인율 높은 순"} · ${l.length}개</p></div>
-      <div class="rows">${rows.map((d, i) => rowToday(d, i, many)).join("")}</div>`;
+      <div class="grid">${rows.map((d, i) => cardToday(d, i, many)).join("")}</div>`;
     return;
   }
 
@@ -534,7 +527,7 @@ function render() {
     const l = listBest();
     v.innerHTML = `<div class="shd"><h2>지금 많이 팔려요</h2>
         <p>토스쇼핑 판매 랭킹 · 매일 갱신</p></div>
-      <div class="rows">${l.map(rowBest).join("")}</div>`;
+      <div class="grid">${l.map(cardBest).join("")}</div>`;
     return;
   }
 
@@ -550,7 +543,7 @@ function render() {
     const bits = [up ? `순위 상승 ${up}개` : "", fresh ? `신규 진입 ${fresh}개` : ""].filter(Boolean);
     v.innerHTML = `<div class="shd"><h2>인기급상승</h2>
         <p>${agoLabel(CAT.deltaBaseAt) || "이전 집계 대비"} · ${bits.join(" · ")}</p></div>
-      <div class="rows">${l.map(rowRising).join("")}</div>`;
+      <div class="grid">${l.map(cardRising).join("")}</div>`;
     return;
   }
 
@@ -560,11 +553,11 @@ function render() {
   v.innerHTML = `
     <div class="rail">
       <button class="${curCat ? "" : "on"}" onclick="setCat(0)">전체</button>
-      ${cats.map((c) => `<button class="${curCat === c.id ? "on" : ""}" onclick="setCat(${c.id})">${c.emoji} ${esc(c.name)}</button>`).join("")}
+      ${cats.map((c) => `<button class="${curCat === c.id ? "on" : ""}" onclick="setCat(${c.id})">${c.emoji} ${esc(shortCat(c.name))}</button>`).join("")}
     </div>
     <div class="shd"><h2>${curCat ? `${esc((cats.find((c) => c.id === curCat) || {}).name)} 판매순위` : "판매순위"}</h2>
       <p>카테고리별 판매 순위 · ${l.length}개</p></div>` +
-    (l.length ? `<div class="rows">${l.map((d, i) => rowBest({ ...d, bestRank: d.catRank || i + 1 }, i)).join("")}</div>`
+    (l.length ? `<div class="grid">${l.map((d, i) => cardCat(d, i, cats)).join("")}</div>`
               : emptyBox("이 카테고리는 아직 비어 있어요", "동기화를 한 번 더 돌려주세요.", "📊"));
 }
 
