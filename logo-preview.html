@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>아이콘 미리보기</title>
+<style>
+  body{margin:0;background:#fff;font:14px -apple-system,sans-serif;color:#0C0E14}
+  .strip{display:flex;align-items:flex-end;gap:22px;padding:20px}
+  .strip.dark{background:#111}
+  figure{margin:0;text-align:center}
+  figcaption{font-size:11px;color:#888;margin-top:6px}
+  img{display:block;border-radius:22.5%}   /* 토스가 씌울 법한 마스크를 흉내 */
+  .s600{width:240px;height:240px}
+  .s120{width:120px;height:120px}
+  .s60{width:60px;height:60px}
+  .s40{width:40px;height:40px}
+</style></head>
+<body>
+<div class="strip">
+  <figure><img class="s600" src="logo.svg"><figcaption>240 (원본 600)</figcaption></figure>
+  <figure><img class="s120" src="logo.svg"><figcaption>120</figcaption></figure>
+  <figure><img class="s60" src="logo.svg"><figcaption>60 — 목록 크기</figcaption></figure>
+  <figure><img class="s40" src="logo.svg"><figcaption>40</figcaption></figure>
+</div>
+<div class="strip dark">
+  <figure><img class="s120" src="logo.svg"></figure>
+  <figure><img class="s60" src="logo.svg"></figure>
+  <figure><img class="s40" src="logo.svg"></figure>
+</div>
+</body></html>

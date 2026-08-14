@@ -1,0 +1,21 @@
+{
+  "name": "today-price",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 4335",
+    "data": "cp catalog.json price-history.json dist/",
+    "build": "vite build && npm run data && ait build",
+    "deploy": "ait deploy"
+  },
+  "dependencies": {
+    "@apps-in-toss/web-framework": "^3.0.2"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

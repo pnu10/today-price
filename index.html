@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1">
+<meta name="theme-color" content="#FBFBFC">
+<title>오늘만 이 가격 — 토스쇼핑 특가·판매순위</title>
+<style>
+/* ─────────────────────────────────────────────────────────────
+   오늘만 이 가격 — 랭킹 보드 (라이트)
+   토큰만 바꾸면 전체 톤이 바뀌도록 색·간격·라운드를 변수로 뺐다.
+   ───────────────────────────────────────────────────────────── */
+:root{
+  --bg:#FBFBFC;            /* 캔버스 */
+  --surface:#FFFFFF;       /* 카드 */
+  --surface2:#F1F3F7;      /* 카드 위의 요소(칩·팩트 등) */
+  --line:#E7E9EF;
+  --ink:#0C0E14;
+  --ink2:#565E6E;
+  --ink3:#98A0AE;
+  /* 라임은 '칠하는 색'이다 — 흰 배경 위 글자로 쓰면 안 보인다.
+     글자·선에는 반드시 --limeInk 를 쓸 것. */
+  --lime:#DDFF55;
+  --limeInk:#4F8A00;       /* 급상승(글자·그래프) */
+  --coral:#EE3B24;         /* 마감 임박·할인율 */
+  --sky:#2F6BFF;
+  --r:16px;
+  --pad:16px;
+  --top:calc(env(safe-area-inset-top,0px));
+  --bot:calc(env(safe-area-inset-bottom,0px));
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);overscroll-behavior-y:none}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",
+              "Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  font-size:15px;line-height:1.45;letter-spacing:-.02em;
+  padding-bottom:calc(24px + var(--bot));
+  /* 탭·행을 탭할 때 글자가 선택되는 걸 막는다(모바일에서 특히 거슬린다) */
+  -webkit-user-select:none;user-select:none;
+}
+input,.sheet h3{-webkit-user-select:text;user-select:text}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+img{display:block;max-width:100%}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.hide{display:none!important}
+
+/* ── 상단 바 ───────────────────────────────────────────────── */
+.top{
+  position:sticky;top:0;z-index:40;padding:calc(10px + var(--top)) var(--pad) 8px;
+  background:linear-gradient(var(--bg) 72%,rgba(8,9,12,0));
+  display:flex;align-items:center;gap:10px;
+}
+.logo{display:flex;align-items:baseline;font-weight:900;font-size:19px;letter-spacing:-.05em;white-space:nowrap}
+/* 흰 배경에선 라임 글자가 안 보이니, 칠해서 대비를 만든다 */
+.logo b{background:var(--lime);color:var(--ink);padding:0 6px;border-radius:7px;margin-left:5px}
+.logo .live{
+  width:6px;height:6px;border-radius:50%;background:var(--coral);align-self:center;margin-left:7px;
+  box-shadow:0 0 0 0 rgba(255,91,74,.7);animation:pulse 2.4s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(255,91,74,.6)}
+  70%{box-shadow:0 0 0 7px rgba(255,91,74,0)}
+  100%{box-shadow:0 0 0 0 rgba(255,91,74,0)}
+}
+.top .spacer{flex:1}
+.iconbtn{
+  width:34px;height:34px;border-radius:11px;background:var(--surface);border:1px solid var(--line);
+  display:grid;place-items:center;font-size:15px;transition:transform .12s,background .12s;
+}
+.iconbtn:active{transform:scale(.9)}
+.iconbtn.on{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.iconbtn .cnt{
+  position:absolute;transform:translate(13px,-13px);background:var(--coral);color:#fff;
+  font-size:10px;font-weight:800;min-width:16px;height:16px;border-radius:8px;
+  display:grid;place-items:center;padding:0 4px;
+}
+.stamp{padding:0 var(--pad) 12px;color:var(--ink3);font-size:12px}
+.stamp b{color:var(--ink2);font-weight:600}
+.stamp .warn{color:var(--coral)}
+
+/* ── 검색 ─────────────────────────────────────────────────── */
+.search{padding:0 var(--pad) 12px}
+.search .box{
+  display:flex;align-items:center;gap:8px;background:var(--surface);
+  border:1px solid var(--line);border-radius:13px;padding:10px 12px;
+}
+.search input{
+  flex:1;background:none;border:0;outline:none;color:var(--ink);font-size:15px;
+}
+.search input::placeholder{color:var(--ink3)}
+
+/* ── 탭 ───────────────────────────────────────────────────── */
+.tabs{
+  position:sticky;top:calc(46px + var(--top));z-index:39;background:var(--bg);
+  padding:2px var(--pad) 0;display:flex;gap:2px;
+  border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{
+  position:relative;padding:11px 12px 13px;color:var(--ink3);font-weight:700;font-size:14.5px;
+  white-space:nowrap;transition:color .15s;
+}
+.tabs button.on{color:var(--ink)}
+.tabs button em{
+  font-style:normal;font-size:11.5px;font-weight:800;margin-left:5px;
+  color:var(--ink3);font-variant-numeric:tabular-nums;
+}
+.tabs button.on em{color:var(--limeInk)}
+.tabs .ink{
+  position:absolute;bottom:-1px;height:3px;background:var(--ink);border-radius:3px;
+  transition:transform .26s cubic-bezier(.22,1,.36,1),width .26s cubic-bezier(.22,1,.36,1);
+}
+
+/* ── 섹션 헤더 ────────────────────────────────────────────── */
+.shd{padding:18px var(--pad) 10px}
+.shd h2{margin:0;font-size:17px;font-weight:800;letter-spacing:-.035em}
+.shd p{margin:4px 0 0;font-size:12.5px;color:var(--ink3)}
+
+/* ── 마감 임박 배너 ───────────────────────────────────────── */
+.urgent{
+  margin:4px var(--pad) 0;padding:13px 15px;border-radius:var(--r);
+  background:linear-gradient(100deg,#FFF1EE,#FFF7F2);border:1px solid #FFDCD4;
+  display:flex;align-items:center;gap:12px;
+}
+.urgent .lab{flex:1;min-width:0}
+.urgent .lab .t{font-size:12px;color:#C4321F;font-weight:700}
+.urgent .lab .n{
+  font-size:13.5px;color:var(--ink2);margin-top:2px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.urgent .cd{
+  font-size:22px;font-weight:900;color:var(--coral);letter-spacing:-.05em;
+  font-variant-numeric:tabular-nums;
+}
+
+/* ── 리스트 행 (베스트·급상승·하루특가 공용) ───────────────── */
+.rows{padding:2px var(--pad) 8px}
+.row{
+  display:flex;align-items:center;gap:12px;padding:11px 0;
+  border-bottom:1px solid var(--line);transition:opacity .12s;
+}
+.row:active{opacity:.55}
+.row:last-child{border-bottom:0}
+.row .rk{
+  width:30px;flex:none;text-align:center;font-size:18px;font-weight:900;
+  color:var(--ink3);letter-spacing:-.06em;font-variant-numeric:tabular-nums;
+}
+.row .rk.top{color:var(--ink);font-size:22px}
+.row .rk.top1{
+  background:var(--lime);border-radius:9px;padding:2px 0;
+}
+.th{
+  width:66px;height:66px;flex:none;border-radius:13px;overflow:hidden;
+  background:var(--surface2);position:relative;
+  /* 상품 이미지 상당수가 흰 배경이라, 테두리가 없으면 페이지에 녹아버린다 */
+  box-shadow:inset 0 0 0 1px var(--line);
+}
+.th img{width:100%;height:100%;object-fit:cover}
+.row .info{flex:1;min-width:0}
+.row .bd{font-size:11.5px;color:var(--ink3);font-weight:600;margin-bottom:1px}
+.row .nm{
+  font-size:14px;font-weight:600;color:var(--ink);line-height:1.32;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.row .pr{display:flex;align-items:baseline;gap:6px;margin-top:5px}
+.row .pr .dc{color:var(--coral);font-weight:900;font-size:14.5px;font-variant-numeric:tabular-nums}
+.row .pr .won{font-weight:800;font-size:15.5px;font-variant-numeric:tabular-nums}
+.row .pr .orig{
+  font-size:11.5px;color:var(--ink3);text-decoration:line-through;font-variant-numeric:tabular-nums;
+}
+.row .sub{margin-top:3px;font-size:11.5px;color:var(--ink3);display:flex;gap:7px;align-items:center}
+
+/* 급상승 배지 */
+.delta{
+  flex:none;display:flex;flex-direction:column;align-items:center;gap:1px;
+  min-width:44px;
+}
+.delta .v{
+  font-size:15px;font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;
+  color:var(--limeInk);
+}
+.delta .c{font-size:10px;color:var(--ink3);font-weight:700}
+.delta.new .v{color:var(--coral);font-size:11.5px;letter-spacing:.02em}
+
+/* 하루특가 남은 시간 게이지 */
+.gauge{margin-top:6px;height:3px;border-radius:2px;background:var(--surface2);overflow:hidden}
+.gauge i{display:block;height:100%;background:var(--sky);border-radius:2px;transition:width .5s linear}
+.gauge.soon i{background:var(--coral)}
+.row .left{font-size:11.5px;font-weight:700;color:var(--sky);font-variant-numeric:tabular-nums}
+.row .left.soon{color:var(--coral)}
+
+/* ── 카테고리 ─────────────────────────────────────────────── */
+.rail{
+  display:flex;gap:7px;overflow-x:auto;padding:12px var(--pad) 4px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+}
+.rail::-webkit-scrollbar{display:none}
+.rail button{
+  flex:none;padding:8px 13px;border-radius:999px;background:var(--surface);
+  border:1px solid var(--line);font-size:13.5px;font-weight:700;color:var(--ink2);
+  transition:transform .12s;
+}
+.rail button:active{transform:scale(.94)}
+.rail button.on{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+
+/* ── 2열 그리드 (검색·찜) ─────────────────────────────────── */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:8px var(--pad) 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;transition:transform .12s}
+.card:active{transform:scale(.97)}
+.card .ph{position:relative;aspect-ratio:1;background:var(--surface2)}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph .tag{
+  position:absolute;left:8px;top:8px;background:var(--coral);color:#fff;
+  font-size:11px;font-weight:900;padding:3px 7px;border-radius:7px;font-variant-numeric:tabular-nums;
+}
+.card .bd{padding:10px 11px 12px}
+.card .bd .nm{
+  font-size:13px;line-height:1.34;color:var(--ink2);height:2.68em;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+}
+.card .bd .pr{margin-top:6px;font-weight:800;font-size:15px;font-variant-numeric:tabular-nums}
+
+/* ── 빈 상태 / 스켈레톤 ───────────────────────────────────── */
+.empty{padding:52px 28px;text-align:center;color:var(--ink3);font-size:13.5px;line-height:1.7}
+.empty .e{font-size:34px;margin-bottom:12px;opacity:.8}
+.empty b{color:var(--ink2);display:block;font-size:15px;margin-bottom:6px;font-weight:700}
+.sk{padding:8px var(--pad)}
+.sk .r{display:flex;gap:12px;padding:11px 0;align-items:center}
+.sk .b{border-radius:10px;background:linear-gradient(90deg,#EEF0F4,#F7F8FA,#EEF0F4);
+  background-size:200% 100%;animation:sh 1.3s infinite}
+@keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ── 상세 시트 ────────────────────────────────────────────── */
+.dim{
+  position:fixed;inset:0;background:rgba(12,14,20,.45);opacity:0;pointer-events:none;
+  transition:opacity .25s;z-index:60;backdrop-filter:blur(2px);
+}
+.dim.on{opacity:1;pointer-events:auto}
+.sheet{
+  position:fixed;left:0;right:0;bottom:0;z-index:61;background:var(--surface);
+  border-radius:22px 22px 0 0;transform:translateY(102%);
+  transition:transform .32s cubic-bezier(.22,1,.36,1);
+  max-height:90vh;overflow-y:auto;padding-bottom:calc(16px + var(--bot));
+}
+.sheet.on{transform:translateY(0)}
+.sheet .grab{width:38px;height:4px;border-radius:2px;background:var(--line);margin:9px auto 4px}
+.sheet .x{position:absolute;right:14px;top:14px;width:30px;height:30px;border-radius:50%;
+  background:rgba(12,14,20,.5);color:#fff;display:grid;place-items:center;font-size:15px;z-index:2}
+.sheet .hero{position:relative;aspect-ratio:1.35;background:var(--surface2);border-bottom:1px solid var(--line)}
+.sheet .hero img{width:100%;height:100%;object-fit:cover}
+.sheet .body{padding:16px var(--pad) 0}
+.sheet .bd2{font-size:12.5px;color:var(--ink3);font-weight:600}
+.sheet h3{margin:3px 0 0;font-size:17px;font-weight:700;line-height:1.36;letter-spacing:-.03em}
+.sheet .price{display:flex;align-items:baseline;gap:8px;margin-top:12px}
+.sheet .price .dc{font-size:23px;font-weight:900;color:var(--coral);font-variant-numeric:tabular-nums}
+.sheet .price .won{font-size:25px;font-weight:900;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+.sheet .price .orig{font-size:13px;color:var(--ink3);text-decoration:line-through;font-variant-numeric:tabular-nums}
+.facts{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.fact{
+  background:var(--surface2);border-radius:11px;padding:9px 12px;flex:1;min-width:88px;
+}
+.fact .k{font-size:11px;color:var(--ink3);font-weight:600}
+.fact .v{font-size:14px;font-weight:800;margin-top:2px;font-variant-numeric:tabular-nums}
+.fact .v.up{color:var(--limeInk)}
+.fact .v.down{color:var(--ink2)}
+.fact .v.hot{color:var(--coral)}
+.spark{margin-top:14px;background:var(--surface2);border-radius:13px;padding:13px 14px}
+.spark .hd{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;color:var(--ink3)}
+.spark .hd b{color:var(--ink);font-size:13.5px;font-variant-numeric:tabular-nums}
+.spark svg{width:100%;height:46px;margin-top:8px;overflow:visible}
+.cta{display:flex;gap:9px;padding:16px var(--pad) 4px}
+.cta .buy{
+  flex:1;background:var(--lime);color:var(--ink);font-weight:900;font-size:16px;
+  padding:15px;border-radius:14px;text-align:center;transition:transform .12s;
+}
+.cta .buy:active{transform:scale(.97)}
+.cta .buy.off{background:var(--surface2);color:var(--ink3)}
+.cta .ic{
+  width:52px;border-radius:14px;background:var(--surface2);display:grid;place-items:center;font-size:19px;
+}
+.note{padding:10px var(--pad) 0;font-size:11px;color:var(--ink3);line-height:1.6;text-align:center}
+
+/* ── 토스트 ───────────────────────────────────────────────── */
+.toast{
+  position:fixed;left:50%;bottom:calc(28px + var(--bot));transform:translate(-50%,14px);
+  background:#15181F;color:#F7F8FA;font-size:13.5px;font-weight:700;
+  padding:11px 17px;border-radius:12px;opacity:0;pointer-events:none;
+  transition:opacity .22s,transform .22s;z-index:80;
+}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="logo">오늘만<b>이 가격</b><i class="live"></i></div>
+  <div class="spacer"></div>
+  <button class="iconbtn" id="btnSearch" aria-label="검색">🔍</button>
+  <button class="iconbtn" id="btnSaved" aria-label="찜">♡<span class="cnt hide" id="savedCnt">0</span></button>
+</header>
+
+<div class="stamp" id="stamp"></div>
+
+<div class="search hide" id="searchBar">
+  <div class="box">
+    <span>🔍</span>
+    <input id="q" type="search" placeholder="상품·브랜드 검색" autocomplete="off">
+    <button id="qx" class="hide">✕</button>
+  </div>
+</div>
+
+<nav class="tabs" id="tabs">
+  <button data-t="today">⏰ 하루특가<em id="cTod">0</em></button>
+  <button data-t="best">🏆 베스트<em id="cBes">0</em></button>
+  <button data-t="rising">🚀 인기급상승<em id="cRis">0</em></button>
+  <button data-t="cat">📊 판매순위<em id="cCat">0</em></button>
+  <i class="ink" id="tabInk"></i>
+</nav>
+
+<main id="view">
+  <div class="sk" id="skeleton">
+    <div class="r"><div class="b" style="width:30px;height:20px"></div><div class="b" style="width:66px;height:66px"></div><div style="flex:1"><div class="b" style="height:12px;width:45%"></div><div class="b" style="height:14px;width:88%;margin-top:7px"></div><div class="b" style="height:15px;width:38%;margin-top:8px"></div></div></div>
+    <div class="r"><div class="b" style="width:30px;height:20px"></div><div class="b" style="width:66px;height:66px"></div><div style="flex:1"><div class="b" style="height:12px;width:38%"></div><div class="b" style="height:14px;width:76%;margin-top:7px"></div><div class="b" style="height:15px;width:42%;margin-top:8px"></div></div></div>
+    <div class="r"><div class="b" style="width:30px;height:20px"></div><div class="b" style="width:66px;height:66px"></div><div style="flex:1"><div class="b" style="height:12px;width:52%"></div><div class="b" style="height:14px;width:82%;margin-top:7px"></div><div class="b" style="height:15px;width:34%;margin-top:8px"></div></div></div>
+  </div>
+</main>
+
+<div class="dim" id="dim"></div>
+<div class="sheet" id="sheet"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   오늘만 이 가격 (앱인토스 식별자 today-price)
+   데이터: sync.py 가 토스쇼핑 쉐어링크 Open API로 만든 catalog.json
+   { updatedAt, deltaBaseAt, categories:[{id,name,emoji}], items:[...] }
+   ═══════════════════════════════════════════════════════════════ */
+const $ = (s) => document.querySelector(s);
+const won = (n) => (n || 0).toLocaleString("ko-KR");
+
+/* 배포 후 재빌드 없이 데이터만 갱신하려고 원격 URL을 먼저 본다.
+   배치(sync.py)가 하루 한 번 여기로 푸시하므로 앱 재배포 없이 딜이 바뀐다.
+   로컬(localhost·file://)에서는 방금 동기화한 같은 폴더 파일을 봐야 하므로 건너뛴다.
+   비워두면 항상 같은 폴더의 catalog.json을 쓴다. */
+const REMOTE = "https://pnu10.github.io/today-price";
+const IS_LOCAL = ["localhost", "127.0.0.1", ""].includes(location.hostname);
+
+let CAT = { items: [], categories: [] };
+let PRICES = {};
+let tab = "today";
+let curCat = 0;
+let curQ = "";
+let cur = null;                                   // 시트에 열려 있는 상품
+let saved = JSON.parse(localStorage.getItem("dealrank.saved") || "[]");
+
+/* ── 유틸 ──────────────────────────────────────────────────── */
+// 하루특가는 endAt이 지나면 토스에서 판매가 끝난다. catalog.json은 동기화 때만 갱신되므로
+// 만료된 게 남아 있을 수 있어 화면에서 한 번 더 걸러낸다(가격이 이미 달라져 있다).
+const isLive = (d) => !d.endAt || new Date(d.endAt).getTime() > Date.now();
+const msLeft = (d) => new Date(d.endAt).getTime() - Date.now();
+
+function hhmmss(ms) {
+  if (ms <= 0) return "종료";
+  const s = Math.floor(ms / 1000);
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), ss = s % 60;
+  return h ? `${h}:${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`
+           : `${m}:${String(ss).padStart(2, "0")}`;
+}
+function agoLabel(iso) {
+  if (!iso) return "";
+  const days = Math.round((Date.now() - new Date(iso).getTime()) / 86400000);
+  if (days >= 1) return `${days}일 전 대비`;
+  const h = Math.max(1, Math.round((Date.now() - new Date(iso).getTime()) / 3600000));
+  return `${h}시간 전 대비`;
+}
+function esc(s) {
+  return String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+function toast(msg) {
+  const t = $("#toast");
+  t.textContent = msg; t.classList.add("on");
+  clearTimeout(toast._t);
+  toast._t = setTimeout(() => t.classList.remove("on"), 1900);
+}
+
+/* ── 목록 셀렉터 ───────────────────────────────────────────── */
+const live = () => CAT.items.filter(isLive);
+const listToday  = () => live().filter((d) => d.endAt).sort((a, b) => msLeft(a) - msLeft(b));
+const listBest   = () => live().filter((d) => d.bestRank).sort((a, b) => a.bestRank - b.bestRank);
+// 급상승: 순위가 오른 것 우선, 그다음 신규 진입(어제 랭킹에 없던 상품)
+const listRising = () => live()
+  .filter((d) => (d.rankDelta || 0) > 0 || d.isNew)
+  .sort((a, b) => (b.rankDelta || 0) - (a.rankDelta || 0) || a.bestRank - b.bestRank);
+const listCat = () => {
+  const l = live().filter((d) => d.catId && (!curCat || d.catId === curCat));
+  return l.sort((a, b) => (a.catRank || 999) - (b.catRank || 999) || b.dc - a.dc);
+};
+const listSaved = () => CAT.items.filter((d) => saved.includes(d.id));
+
+/* ── 조각 렌더러 ───────────────────────────────────────────── */
+function thumb(d) {
+  return `<div class="th">${d.img ? `<img src="${esc(d.img)}" alt="" loading="lazy">` : ""}</div>`;
+}
+function priceLine(d) {
+  return `<div class="pr">
+    ${d.dc > 0 ? `<span class="dc">${d.dc}%</span>` : ""}
+    <span class="won">${won(d.price)}원</span>
+    ${d.dc > 0 ? `<span class="orig">${won(d.orig)}원</span>` : ""}
+  </div>`;
+}
+function reviewLine(d) {
+  if (!d.reviews) return "";
+  return `<div class="sub">⭐ ${(d.score || 0).toFixed(1)} · 리뷰 ${won(d.reviews)}</div>`;
+}
+
+function rowBest(d, i) {
+  const n = d.bestRank || i + 1;
+  const cls = n <= 3 ? (n === 1 ? "rk top top1" : "rk top") : "rk";
+  return `<div class="row" onclick="openSheet('${d.id}')">
+    <div class="${cls} num">${n}</div>
+    ${thumb(d)}
+    <div class="info">
+      ${d.brand ? `<div class="bd">${esc(d.brand)}</div>` : ""}
+      <div class="nm">${esc(d.name)}</div>
+      ${priceLine(d)}${reviewLine(d)}
+    </div>
+  </div>`;
+}
+
+function rowRising(d) {
+  const up = d.rankDelta > 0;
+  return `<div class="row" onclick="openSheet('${d.id}')">
+    <div class="delta ${up ? "" : "new"}">
+      <div class="v num">${up ? `▲${d.rankDelta}` : "NEW"}</div>
+      <div class="c">${d.bestRank ? `${d.bestRank}위` : ""}</div>
+    </div>
+    ${thumb(d)}
+    <div class="info">
+      ${d.brand ? `<div class="bd">${esc(d.brand)}</div>` : ""}
+      <div class="nm">${esc(d.name)}</div>
+      ${priceLine(d)}${reviewLine(d)}
+    </div>
+  </div>`;
+}
+
+// 하루특가는 보통 그날 자정에 다 같이 끝나서 endAt이 전부 같다.
+// 그럴 땐 행마다 똑같은 카운트다운을 85번 찍는 게 소음이라 상단 배너 하나로만 보여주고,
+// 마감 시각이 제각각인 날에만 행에도 남은 시간을 붙인다.
+function rowToday(d, i, showTimer) {
+  const left = msLeft(d);
+  const soon = left < 2 * 3600 * 1000;
+  const timer = showTimer
+    ? `<div class="sub"><span class="left ${soon ? "soon" : ""} num" data-cd>${hhmmss(left)}</span> 남음</div>`
+    : reviewLine(d);
+  const n = i + 1;
+  const cls = n <= 3 ? (n === 1 ? "rk top top1" : "rk top") : "rk";
+  return `<div class="row" onclick="openSheet('${d.id}')" data-end="${esc(d.endAt)}">
+    <div class="${cls} num">${n}</div>
+    ${thumb(d)}
+    <div class="info">
+      ${d.brand ? `<div class="bd">${esc(d.brand)}</div>` : ""}
+      <div class="nm">${esc(d.name)}</div>
+      ${priceLine(d)}${timer}
+    </div>
+  </div>`;
+}
+
+function cardOf(d) {
+  return `<div class="card" onclick="openSheet('${d.id}')">
+    <div class="ph">${d.img ? `<img src="${esc(d.img)}" alt="" loading="lazy">` : ""}
+      ${d.dc > 0 ? `<span class="tag num">${d.dc}%</span>` : ""}</div>
+    <div class="bd"><div class="nm">${esc(d.name)}</div>
+      <div class="pr num">${won(d.price)}원</div></div>
+  </div>`;
+}
+
+function emptyBox(title, desc, emoji) {
+  return `<div class="empty"><div class="e">${emoji}</div><b>${title}</b>${desc}</div>`;
+}
+
+/* ── 뷰 ────────────────────────────────────────────────────── */
+function render() {
+  const v = $("#view");
+
+  if (curQ) {
+    const q = curQ.toLowerCase();
+    const hit = live().filter((d) =>
+      (`${d.name} ${d.brand} ${d.cat}`).toLowerCase().includes(q));
+    v.innerHTML = `<div class="shd"><h2>'${esc(curQ)}' 검색결과 ${hit.length}건</h2></div>` +
+      (hit.length ? `<div class="grid">${hit.map(cardOf).join("")}</div>`
+                  : emptyBox("찾는 상품이 없어요", "다른 검색어로 찾아보세요.", "🔍"));
+    return;
+  }
+
+  if (tab === "saved") {
+    const mine = listSaved();
+    const save = mine.reduce((s, d) => s + (d.orig - d.price), 0);
+    v.innerHTML = `<div class="shd"><h2>찜한 상품 ${mine.length}개</h2>
+      ${mine.length ? `<p>정가 대비 <b style="color:var(--limeInk)">${won(save)}원</b> 아끼는 중</p>` : ""}</div>` +
+      (mine.length ? `<div class="grid">${mine.map(cardOf).join("")}</div>`
+                   : emptyBox("아직 찜한 상품이 없어요", "상세 화면에서 하트를 누르면<br>여기에 모여요.", "♡"));
+    return;
+  }
+
+  if (tab === "today") {
+    const l = listToday();
+    if (!l.length) {
+      v.innerHTML = emptyBox("오늘은 하루특가 편성이 없어요",
+        "하루특가는 매일 새로 열려요.<br>베스트·급상승 탭을 먼저 보세요.", "⏰");
+      return;
+    }
+    // 마감 시각이 여러 개인 날에만 행별 타이머를 켠다
+    const ends = new Set(l.map((d) => d.endAt));
+    const many = ends.size > 1;
+    const rows = many ? l : [...l].sort((a, b) => b.dc - a.dc);
+    const first = rows.find((d) => d.endAt) || l[0];
+    v.innerHTML = `
+      <div class="urgent">
+        <div class="lab">
+          <div class="t">${many ? "가장 먼저 끝나는 특가" : "오늘 특가 마감까지"}</div>
+          <div class="n">${many ? esc(first.name) : `${l.length}개 상품이 동시에 끝나요`}</div>
+        </div>
+        <div class="cd num" data-end="${esc(first.endAt)}" data-cd>${hhmmss(msLeft(first))}</div>
+      </div>
+      <div class="shd"><h2>오늘 지나면 끝나요</h2>
+        <p>${many ? "끝나는 순서대로" : "할인율 높은 순"} · ${l.length}개</p></div>
+      <div class="rows">${rows.map((d, i) => rowToday(d, i, many)).join("")}</div>`;
+    return;
+  }
+
+  if (tab === "best") {
+    const l = listBest();
+    v.innerHTML = `<div class="shd"><h2>지금 많이 팔려요</h2>
+        <p>토스쇼핑 판매 랭킹 · 매일 갱신</p></div>
+      <div class="rows">${l.map(rowBest).join("")}</div>`;
+    return;
+  }
+
+  if (tab === "rising") {
+    const l = listRising();
+    if (!l.length) {
+      v.innerHTML = emptyBox("아직 순위 변동을 집계하는 중이에요",
+        "급상승은 판매 랭킹을 이전 기록과 비교해서 만들어요.<br>동기화가 두 번 쌓이면 나타나요.", "🚀");
+      return;
+    }
+    const up = l.filter((d) => d.rankDelta > 0).length;
+    const fresh = l.length - up;
+    const bits = [up ? `순위 상승 ${up}개` : "", fresh ? `신규 진입 ${fresh}개` : ""].filter(Boolean);
+    v.innerHTML = `<div class="shd"><h2>인기급상승</h2>
+        <p>${agoLabel(CAT.deltaBaseAt) || "이전 집계 대비"} · ${bits.join(" · ")}</p></div>
+      <div class="rows">${l.map(rowRising).join("")}</div>`;
+    return;
+  }
+
+  // 카테고리
+  const cats = CAT.categories || [];
+  const l = listCat();
+  v.innerHTML = `
+    <div class="rail">
+      <button class="${curCat ? "" : "on"}" onclick="setCat(0)">전체</button>
+      ${cats.map((c) => `<button class="${curCat === c.id ? "on" : ""}" onclick="setCat(${c.id})">${c.emoji} ${esc(c.name)}</button>`).join("")}
+    </div>
+    <div class="shd"><h2>${curCat ? `${esc((cats.find((c) => c.id === curCat) || {}).name)} 판매순위` : "판매순위"}</h2>
+      <p>카테고리별 판매 순위 · ${l.length}개</p></div>` +
+    (l.length ? `<div class="rows">${l.map((d, i) => rowBest({ ...d, bestRank: d.catRank || i + 1 }, i)).join("")}</div>`
+              : emptyBox("이 카테고리는 아직 비어 있어요", "동기화를 한 번 더 돌려주세요.", "📊"));
+}
+
+function setCat(id) { curCat = id; render(); window.scrollTo({ top: 0 }); }
+
+/* ── 탭 ────────────────────────────────────────────────────── */
+function setTab(t) {
+  tab = t; curCat = 0;
+  document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("on", b.dataset.t === t));
+  $("#btnSaved").classList.toggle("on", t === "saved");
+  moveInk();
+  render();
+  window.scrollTo({ top: 0 });
+}
+function moveInk() {
+  const on = document.querySelector("#tabs button.on");
+  const ink = $("#tabInk");
+  if (!on) { ink.style.width = "0px"; return; }
+  ink.style.width = `${on.offsetWidth}px`;
+  ink.style.transform = `translateX(${on.offsetLeft}px)`;
+}
+document.querySelectorAll("#tabs button").forEach((b) => { b.onclick = () => setTab(b.dataset.t); });
+window.addEventListener("resize", moveInk);
+
+/* ── 검색 ──────────────────────────────────────────────────── */
+$("#btnSearch").onclick = () => {
+  const bar = $("#searchBar");
+  bar.classList.toggle("hide");
+  if (bar.classList.contains("hide")) { $("#q").value = ""; curQ = ""; render(); }
+  else $("#q").focus();
+};
+$("#q").addEventListener("input", (e) => {
+  curQ = e.target.value.trim();
+  $("#qx").classList.toggle("hide", !curQ);
+  render();
+});
+$("#qx").onclick = () => { $("#q").value = ""; curQ = ""; $("#qx").classList.add("hide"); render(); $("#q").focus(); };
+$("#btnSaved").onclick = () => setTab(tab === "saved" ? "today" : "saved");
+
+/* ── 상세 시트 ─────────────────────────────────────────────── */
+function lowest(d) {
+  const h = PRICES[d.id];
+  if (!h || h.length < 2) return null;
+  const ps = h.map((x) => x.p);
+  const min = Math.min(...ps), max = Math.max(...ps);
+  return { min, max, flat: min === max, days: h.length, isLow: d.price <= min, points: h.slice(-14) };
+}
+function sparkSvg(pts) {
+  if (!pts || pts.length < 2) return "";
+  const ps = pts.map((x) => x.p);
+  const min = Math.min(...ps), max = Math.max(...ps);
+  const span = max - min;
+  const W = 100, H = 40;
+  // 값이 계속 같으면 span이 0이라 선이 바닥에 붙는다 → 가운데 수평선으로 그린다
+  const yOf = (p) => (span ? H - ((p - min) / span) * H : H / 2);
+  const d = pts.map((x, i) =>
+    `${i ? "L" : "M"}${((i / (pts.length - 1)) * W).toFixed(1)},${yOf(x.p).toFixed(1)}`).join(" ");
+  const lastY = yOf(ps[ps.length - 1]);
+  // 끝점 원과 선 굵기가 잘리지 않게 viewBox에 여백을 준다
+  return `<svg viewBox="-3 -4 ${W + 7} ${H + 8}" preserveAspectRatio="none">
+    <path d="${d}" fill="none" stroke="var(--limeInk)" stroke-width="2" vector-effect="non-scaling-stroke"
+      stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="${W}" cy="${lastY.toFixed(1)}" r="2.5" fill="var(--limeInk)" vector-effect="non-scaling-stroke"/>
+  </svg>`;
+}
+
+function openSheet(id) {
+  const d = CAT.items.find((x) => x.id === id);
+  if (!d) return;
+  cur = d;
+  const lo = lowest(d);
+  const isSaved = saved.includes(d.id);
+  const facts = [];
+  if (d.bestRank) facts.push(`<div class="fact"><div class="k">판매 랭킹</div><div class="v">${d.bestRank}위</div></div>`);
+  if (d.rankDelta) {
+    facts.push(`<div class="fact"><div class="k">${agoLabel(CAT.deltaBaseAt) || "이전 대비"}</div>
+      <div class="v ${d.rankDelta > 0 ? "up" : "down"}">${d.rankDelta > 0 ? "▲" : "▼"}${Math.abs(d.rankDelta)}</div></div>`);
+  } else if (d.isNew) {
+    facts.push(`<div class="fact"><div class="k">랭킹</div><div class="v hot">신규 진입</div></div>`);
+  }
+  if (d.reviews) facts.push(`<div class="fact"><div class="k">리뷰</div><div class="v">⭐ ${(d.score || 0).toFixed(1)}</div></div>`);
+  if (d.endAt) facts.push(`<div class="fact"><div class="k">남은 시간</div>
+    <div class="v hot" data-end="${esc(d.endAt)}" data-cd>${hhmmss(msLeft(d))}</div></div>`);
+
+  $("#sheet").innerHTML = `
+    <div class="grab"></div>
+    <button class="x" onclick="closeSheet()">✕</button>
+    <div class="hero">${d.img ? `<img src="${esc(d.img)}" alt="">` : ""}</div>
+    <div class="body">
+      ${d.brand ? `<div class="bd2">${esc(d.brand)}${d.cat ? ` · ${esc(d.cat)}` : ""}</div>` : ""}
+      <h3>${esc(d.fullName || d.name)}</h3>
+      <div class="price">
+        ${d.dc > 0 ? `<span class="dc">${d.dc}%</span>` : ""}
+        <span class="won">${won(d.price)}원</span>
+        ${d.dc > 0 ? `<span class="orig">${won(d.orig)}원</span>` : ""}
+      </div>
+      ${facts.length ? `<div class="facts">${facts.join("")}</div>` : ""}
+      ${lo ? `<div class="spark">
+          <div class="hd"><span>${lo.flat ? `${lo.days}번 확인 내내 같은 가격이에요`
+                                           : (lo.isLow ? "기록상 가장 싼 가격이에요" : "기록된 최저가")}</span>
+            <b>${won(lo.min)}원</b></div>
+          ${sparkSvg(lo.points)}
+        </div>` : ""}
+      <div class="cta">
+        <button class="buy ${d.url ? "" : "off"}" onclick="buy()">${d.url ? "토스쇼핑에서 보기" : "구매 링크 준비 중"}</button>
+        <button class="ic" onclick="toggleSave()" id="saveBtn">${isSaved ? "❤️" : "♡"}</button>
+        <button class="ic" onclick="share()">↗</button>
+      </div>
+      <div class="note">토스쇼핑으로 이동해 구매가 이뤄지면 운영자에게 일정 수수료가 지급될 수 있어요.</div>
+    </div>`;
+  $("#dim").classList.add("on");
+  $("#sheet").classList.add("on");
+  tickCountdowns();
+}
+function closeSheet() {
+  $("#dim").classList.remove("on");
+  $("#sheet").classList.remove("on");
+  cur = null;
+}
+$("#dim").onclick = closeSheet;
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && cur) closeSheet(); });
+
+/* 외부 링크 — 토스 앱(앱인토스 WebView)에서는 window.open이 안 먹어 SDK의 openURL을 써야 한다.
+   SDK import는 toss-bridge.js가 맡고, 성공하면 window.__tossOpenURL 로 실어준다. */
+function openExternal(url) {
+  if (!url) return;
+  if (typeof window.__tossOpenURL === "function") { window.__tossOpenURL(url); return; }
+  window.open(url, "_blank");
+}
+function buy() {
+  if (!cur || !cur.url) { toast("아직 구매 링크가 없어요"); return; }
+  const url = cur.url;
+  toast("토스쇼핑으로 이동해요 →");
+  setTimeout(() => openExternal(url), 380);
+}
+function toggleSave() {
+  if (!cur) return;
+  const i = saved.indexOf(cur.id);
+  if (i >= 0) { saved.splice(i, 1); toast("찜을 해제했어요"); }
+  else { saved.push(cur.id); toast("찜했어요 ❤️"); }
+  localStorage.setItem("dealrank.saved", JSON.stringify(saved));
+  $("#saveBtn").textContent = saved.includes(cur.id) ? "❤️" : "♡";
+  paintSavedCount();
+}
+function share() {
+  if (!cur) return;
+  const link = cur.url || location.href;
+  const txt = `[오늘만 이 가격] ${cur.name} — ${cur.dc}% 할인, ${won(cur.price)}원`;
+  if (navigator.share) navigator.share({ title: "오늘만 이 가격", text: txt, url: link }).catch(() => {});
+  else { navigator.clipboard?.writeText(`${txt}\n${link}`); toast("링크를 복사했어요 📋"); }
+}
+function paintSavedCount() {
+  const el = $("#savedCnt");
+  el.textContent = saved.length;
+  el.classList.toggle("hide", !saved.length);
+}
+
+/* ── 카운트다운 ────────────────────────────────────────────── */
+function tickCountdowns() {
+  document.querySelectorAll("[data-cd]").forEach((el) => {
+    const end = el.dataset.end || el.closest("[data-end]")?.dataset.end;
+    if (!end) return;
+    const left = new Date(end).getTime() - Date.now();
+    el.textContent = hhmmss(left);
+    if (left < 2 * 3600 * 1000) el.classList.add("soon");
+  });
+}
+setInterval(() => {
+  tickCountdowns();
+  // 만료된 하루특가는 목록에서 빠져야 한다 — 1분에 한 번만 다시 그린다
+  if (Date.now() - (render._last || 0) > 60000 && tab === "today" && !curQ) {
+    render._last = Date.now();
+    render();
+  }
+}, 1000);
+
+/* ── 로드 ──────────────────────────────────────────────────── */
+async function loadJson(name) {
+  if (REMOTE && !IS_LOCAL) {
+    const r = await fetch(`${REMOTE}/${name}`, { cache: "no-store" }).catch(() => null);
+    if (r && r.ok) return r.json().catch(() => null);
+  }
+  const r = await fetch(name, { cache: "no-store" }).catch(() => null);
+  return r && r.ok ? r.json().catch(() => null) : null;
+}
+
+async function boot() {
+  const [cat, prices] = await Promise.all([loadJson("catalog.json"), loadJson("price-history.json")]);
+  PRICES = prices || {};
+
+  if (!cat || !cat.items || !cat.items.length) {
+    $("#view").innerHTML = emptyBox("아직 데이터가 없어요",
+      "터미널에서 <b>python3 sync.py</b> 를 한 번 돌려주세요.", "📦");
+    return;
+  }
+  CAT = cat;
+
+  const t = new Date(cat.updatedAt);
+  const stampTxt = `${String(t.getMonth() + 1).padStart(2, "0")}.${String(t.getDate()).padStart(2, "0")} ` +
+    `${String(t.getHours()).padStart(2, "0")}:${String(t.getMinutes()).padStart(2, "0")} 기준`;
+  $("#stamp").innerHTML = `<b>${stampTxt}</b> · 상품 ${won(live().length)}개` +
+    (cat.bootstrap ? ` · <span class="warn">임시 데이터</span>` : "");
+
+  $("#cTod").textContent = listToday().length;
+  $("#cBes").textContent = listBest().length;
+  $("#cRis").textContent = listRising().length;
+  $("#cCat").textContent = (cat.categories || []).length;
+
+  paintSavedCount();
+  // 하루특가 편성이 없는 날엔 베스트를 첫 화면으로
+  setTab(listToday().length ? "today" : "best");
+}
+boot();
+</script>
+<script type="module" src="./toss-bridge.js"></script>
+</body>
+</html>

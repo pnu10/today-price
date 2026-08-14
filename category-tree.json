@@ -1,0 +1,69 @@
+{
+  "fetchedAt": 1786483185,
+  "tops": [
+    {
+      "categoryId": 14817,
+      "displayName": "가구/홈데코"
+    },
+    {
+      "categoryId": 16443,
+      "displayName": "가전/디지털"
+    },
+    {
+      "categoryId": 50993,
+      "displayName": "도서"
+    },
+    {
+      "categoryId": 16503,
+      "displayName": "문구/오피스"
+    },
+    {
+      "categoryId": 20203,
+      "displayName": "반려/애완용품"
+    },
+    {
+      "categoryId": 50997,
+      "displayName": "뷰티"
+    },
+    {
+      "categoryId": 22343,
+      "displayName": "생활용품"
+    },
+    {
+      "categoryId": 24215,
+      "displayName": "스포츠/레져"
+    },
+    {
+      "categoryId": 50995,
+      "displayName": "식품"
+    },
+    {
+      "categoryId": 60075,
+      "displayName": "여행/취미"
+    },
+    {
+      "categoryId": 29475,
+      "displayName": "완구/취미"
+    },
+    {
+      "categoryId": 29525,
+      "displayName": "음반/DVD"
+    },
+    {
+      "categoryId": 29635,
+      "displayName": "자동차용품"
+    },
+    {
+      "categoryId": 29967,
+      "displayName": "주방용품"
+    },
+    {
+      "categoryId": 30343,
+      "displayName": "출산/유아동"
+    },
+    {
+      "categoryId": 34635,
+      "displayName": "패션의류잡화"
+    }
+  ]
+}

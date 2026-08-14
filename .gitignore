@@ -1,0 +1,16 @@
+.env
+.toss-token.json
+node_modules/
+dist/
+.DS_Store
+sync.log
+# 앱인토스 빌드 산출물
+*.ait
+# 발급받은 쉐어링크 캐시 — publisherId가 들어있어 공개 금지(로컬 전용)
+links.json
+# 로컬 자동화 도구 (공개 안 함)
+sync.py
+make-screenshots.py
+bootstrap-from-lowest-pick.py
+com.todayprice.sync.plist
+__pycache__/
