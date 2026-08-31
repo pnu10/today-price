@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30",
+  "updatedAt": "2026-08-31",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -1649,6 +1649,90 @@
       "superweek": false,
       "url": "https://naver.me/xIFkxiaG",
       "addedAt": "2026-08-30"
+    },
+    {
+      "id": "tc-Gowph8HV",
+      "region": "장가계",
+      "country": "",
+      "name": "[ZERO여행][NO쇼핑/옵션/팁] 장가계 원가계+천문산/칠성산 4일 (72기루/전신마사지/현지맛집)",
+      "duration": "3박4일",
+      "ptype": "해외패키지",
+      "origPrice": 1489000,
+      "salePrice": null,
+      "discount": 0,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [
+        "마사지",
+        "쇼",
+        "전신마사지"
+      ],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMDVfMjky/MDAxNzcyNjk5NTkwNDg1.49TVRfvi50q6xf8jaFo4JJIDHtHAOtfna3t4EDLon60g.OAIEidMmtmrFzBTzNuE3xwhM88uEYI07686N6cFjV0Ig.PNG/635971822964039352.png",
+      "category": "중국",
+      "superweek": false,
+      "url": "https://naver.me/Gowph8HV",
+      "addedAt": "2026-08-31"
+    },
+    {
+      "id": "tc-54KvLsvm",
+      "region": "시드니",
+      "country": "",
+      "name": "시드니/뉴캐슬/포트스테판 7일 사막투어 크루즈2회 오페라내부",
+      "duration": "5박7일",
+      "ptype": "해외패키지",
+      "origPrice": 2099000,
+      "salePrice": null,
+      "discount": 0,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMjBfMjk1/MDAxNzc0MDEwNjUzNDcw.Ra07vc_9aUwhuu-5CaSKsVA4OQm7GTLtuVM3Ml-eZIog.qYrt9nLfEeGtdzzktEqvMuYUnZD9RsVl6582oJ1csWIg.JPEG/21683789.jpg",
+      "category": "괌",
+      "superweek": false,
+      "url": "https://naver.me/54KvLsvm",
+      "addedAt": "2026-08-31"
+    },
+    {
+      "id": "tc-FBMjePjA",
+      "region": "시드니",
+      "country": "",
+      "name": "시드니 업그레이드 올인원 6일 오페라하우스 내부 크루즈 2회 블루마운틴 시닉4종+선셋+별빛 포트스티븐스 6대 특식 전일정 4성",
+      "duration": "4박6일",
+      "ptype": "해외패키지",
+      "origPrice": 1499000,
+      "salePrice": 1424050,
+      "discount": 5,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [
+        "4성"
+      ],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA0MjRfMzAg/MDAxNzc3MDA1NzgwNTg5.lRVMLbZiXBsJqO47MG6yvyr3ECsr04LwLOb-WILfqFAg.MicURVuUUwFKh5TvH__0r3-4mDpA0niPtqcwMA2S4Y8g.PNG/a96c8405-17e1-449a-b9c1-79c4550b5999.png",
+      "category": "괌",
+      "superweek": false,
+      "url": "https://naver.me/FBMjePjA",
+      "addedAt": "2026-08-31"
+    },
+    {
+      "id": "tc-GgU1llZ7",
+      "region": "스위스",
+      "country": "",
+      "name": "스위스/이탈리아 2국 9일 <노쇼핑/융프라우/루체른/관광열차/피사/폼페이/콜로세움내부>",
+      "duration": "7박9일",
+      "ptype": "해외패키지",
+      "origPrice": 3899000,
+      "salePrice": 3749000,
+      "discount": 3,
+      "confirmed": true,
+      "noOption": false,
+      "tags": [
+        "쇼"
+      ],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMDZfOTkg/MDAxNzcyNzc1NzczOTQy.V3THZvjI6NJBHIA0xpkQYJaor5Wv8f-Mc4W9qwlASs0g.fBYrbNpYByWbA-xLj6Aqxd4qVErKM0CokZezlx6wM0og.PNG/636088551499861607.png",
+      "category": "유럽",
+      "superweek": false,
+      "url": "https://naver.me/GgU1llZ7",
+      "addedAt": "2026-08-31"
     }
   ],
   "promo": {
