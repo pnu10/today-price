@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T16:36:49Z",
+  "updatedAt": "2026-09-04T16:49:55Z",
   "deltaBaseAt": "2026-09-03T20:00:37Z",
   "categories": [
     {
@@ -94,7 +94,7 @@
       "price": 8800,
       "orig": 24000,
       "dc": 63,
-      "reviews": 48730,
+      "reviews": 48737,
       "score": 4.9,
       "soldOut": false,
       "endAt": "",
@@ -137,6 +137,32 @@
       "url": "https://toss.im/_m/ViZVkHiC"
     },
     {
+      "id": "toss-2620612131",
+      "tacaItemId": 2620612131,
+      "brand": "한입",
+      "name": "삼겹살, 500g, 3개",
+      "fullName": "한입 삼겹살, 500g, 3개",
+      "img": "https://shopping.toss.im/live/temp/2026-03-13/7e3b93b8-3ab1-4310-940f-65a2d3b20cc4.jpeg",
+      "price": 9990,
+      "orig": 29700,
+      "dc": 66,
+      "reviews": 23,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 3,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/z08ARMfx"
+    },
+    {
       "id": "toss-296698859",
       "tacaItemId": 296698859,
       "brand": "파이토메이드",
@@ -146,7 +172,7 @@
       "price": 5700,
       "orig": 15800,
       "dc": 63,
-      "reviews": 3488,
+      "reviews": 3498,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -173,7 +199,7 @@
       "price": 12900,
       "orig": 37900,
       "dc": 65,
-      "reviews": 17352,
+      "reviews": 17360,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -200,7 +226,7 @@
       "price": 8990,
       "orig": 20000,
       "dc": 55,
-      "reviews": 53013,
+      "reviews": 53017,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -252,7 +278,7 @@
       "price": 4990,
       "orig": 13900,
       "dc": 64,
-      "reviews": 3362,
+      "reviews": 3363,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -304,7 +330,7 @@
       "price": 5800,
       "orig": 14900,
       "dc": 61,
-      "reviews": 1017,
+      "reviews": 1021,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -331,7 +357,7 @@
       "price": 7900,
       "orig": 21600,
       "dc": 63,
-      "reviews": 1049,
+      "reviews": 1052,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -374,6 +400,32 @@
       "url": "https://toss.im/_m/jnN0eepc"
     },
     {
+      "id": "toss-173950601",
+      "tacaItemId": 173950601,
+      "brand": "카멕스",
+      "name": "모이스처라이징 립밤, 클래식 스틱, 4.25g, 3개",
+      "fullName": "카멕스 모이스처라이징 립밤, 클래식 스틱, 4.25g, 3개",
+      "img": "https://shopping.toss.im/live/taca/ai/MDFmZmU2/TXh2TWJ0eG1jNVBHOGN4eU44RTlwWGtlN2o3SHc4ZkQyRHd4d3c0MHpqdz0.png",
+      "price": 9780,
+      "orig": 15000,
+      "dc": 34,
+      "reviews": 235,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 13,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/V22RxHyo"
+    },
+    {
       "id": "toss-2559049861",
       "tacaItemId": 2559049861,
       "brand": "수뜰리에",
@@ -383,7 +435,7 @@
       "price": 4590,
       "orig": 39600,
       "dc": 88,
-      "reviews": 6718,
+      "reviews": 6720,
       "score": 4.6,
       "soldOut": false,
       "endAt": "",
@@ -401,6 +453,58 @@
       "url": "https://toss.im/_m/F1m79Ob1"
     },
     {
+      "id": "toss-1622271965",
+      "tacaItemId": 1622271965,
+      "brand": "오즈랜드",
+      "name": "초코와플, 21.4g, 20봉, 2박스",
+      "fullName": "오즈랜드 초코와플, 21.4g, 20봉, 2박스",
+      "img": "https://shopping.toss.im/live/taca/ai/MjYxZDI1/QUsxNFVWUFJlRXRyUjVrMlVudFppNW9YK2xUQzNOcnJwYUpVSkJaVVJvcHQ.png",
+      "price": 8500,
+      "orig": 35800,
+      "dc": 76,
+      "reviews": 209,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 15,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/XnSWER0m"
+    },
+    {
+      "id": "toss-1776020737",
+      "tacaItemId": 1776020737,
+      "brand": "클리어",
+      "name": "미용티슈, 2겹, 300매, 6개",
+      "fullName": "클리어 미용티슈, 2겹, 300매, 6개",
+      "img": "https://shopping.toss.im/live/temp/2026-04-30/346efa4b-0a91-4c9b-836e-49337dfc4eee.jpeg",
+      "price": 5290,
+      "orig": 14900,
+      "dc": 64,
+      "reviews": 892,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 16,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/nRkyxXuD"
+    },
+    {
       "id": "toss-1487103361",
       "tacaItemId": 1487103361,
       "brand": "베라",
@@ -410,7 +514,7 @@
       "price": 5110,
       "orig": 20900,
       "dc": 75,
-      "reviews": 1979,
+      "reviews": 1981,
       "score": 4.6,
       "soldOut": false,
       "endAt": "",
@@ -428,6 +532,58 @@
       "url": "https://toss.im/_m/hrTUeYbx"
     },
     {
+      "id": "toss-582594251",
+      "tacaItemId": 582594251,
+      "brand": "동아제약",
+      "name": "가그린 스탠다드 와이드 미세모 칫솔, 10개입, 2세트",
+      "fullName": "동아제약 가그린 스탠다드 와이드 미세모 칫솔, 10개입, 2세트",
+      "img": "https://shopping.toss.im/live/temp/2026-01-08/acda325c-6d4a-47fd-8d3a-8a2949e2d509.png",
+      "price": 9900,
+      "orig": 21800,
+      "dc": 54,
+      "reviews": 158,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 18,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/PDe8DVBp"
+    },
+    {
+      "id": "toss-1918349725",
+      "tacaItemId": 1918349725,
+      "brand": "헬로바이오",
+      "name": "올리브오일 100% 엑스트라버진 식물성 캡슐, 30캡슐, 3박스",
+      "fullName": "헬로바이오 올리브오일 100% 엑스트라버진 식물성 캡슐, 30캡슐, 3박스",
+      "img": "https://shopping.toss.im/live/temp/2026-08-14/0a20959e-105f-4864-acd2-ad8bc7bde2fc.jpeg",
+      "price": 6500,
+      "orig": 59900,
+      "dc": 89,
+      "reviews": 36,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 19,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/r5lQ1jyi"
+    },
+    {
       "id": "toss-2261736857",
       "tacaItemId": 2261736857,
       "brand": "바른",
@@ -437,7 +593,7 @@
       "price": 11380,
       "orig": 26900,
       "dc": 57,
-      "reviews": 3027,
+      "reviews": 3032,
       "score": 4.6,
       "soldOut": false,
       "endAt": "",
@@ -463,7 +619,7 @@
       "price": 16900,
       "orig": 79900,
       "dc": 78,
-      "reviews": 1680,
+      "reviews": 1682,
       "score": 4.2,
       "soldOut": false,
       "endAt": "",
@@ -480,6 +636,32 @@
       "url": "https://toss.im/_m/N1SxkV4h"
     },
     {
+      "id": "toss-2620517383",
+      "tacaItemId": 2620517383,
+      "brand": "맘스럽",
+      "name": "리얼 헹굼식초, 4L, 2개",
+      "fullName": "맘스럽 리얼 헹굼식초, 4L, 2개",
+      "img": "https://shopping.toss.im/3ff/live/product/834251053/3ffd2f2a-0e54-4d6f-92ba-79e259e224c4.jpg",
+      "price": 4130,
+      "orig": 15900,
+      "dc": 74,
+      "reviews": 1,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 22,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/JG04ZUJo"
+    },
+    {
       "id": "toss-281407267",
       "tacaItemId": 281407267,
       "brand": "스페시핏",
@@ -489,7 +671,7 @@
       "price": 5420,
       "orig": 33800,
       "dc": 83,
-      "reviews": 2711,
+      "reviews": 2712,
       "score": 4.6,
       "soldOut": false,
       "endAt": "",
@@ -506,6 +688,32 @@
       "url": "https://toss.im/_m/nLGrmHag"
     },
     {
+      "id": "toss-168944841",
+      "tacaItemId": 168944841,
+      "brand": "퍼니트",
+      "name": "리얼 루테인, 30캡슐, 3박스",
+      "fullName": "퍼니트 리얼 루테인, 30캡슐, 3박스",
+      "img": "https://shopping.toss.im/live/temp/2025-08-22/b02dd2b4-e7fc-4528-b029-6ffa0af416c7.jpeg",
+      "price": 13900,
+      "orig": 47700,
+      "dc": 70,
+      "reviews": 7,
+      "score": 4.9,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 24,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/xZRNZEJt"
+    },
+    {
       "id": "toss-133432803",
       "tacaItemId": 133432803,
       "brand": "애슐리",
@@ -515,7 +723,7 @@
       "price": 14890,
       "orig": 29920,
       "dc": 50,
-      "reviews": 2539,
+      "reviews": 2541,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -541,7 +749,7 @@
       "price": 9900,
       "orig": 14900,
       "dc": 33,
-      "reviews": 3813,
+      "reviews": 3816,
       "score": 4.6,
       "soldOut": false,
       "endAt": "",
@@ -567,7 +775,7 @@
       "price": 4200,
       "orig": 20000,
       "dc": 79,
-      "reviews": 11206,
+      "reviews": 11207,
       "score": 4.5,
       "soldOut": false,
       "endAt": "",
@@ -593,7 +801,7 @@
       "price": 3990,
       "orig": 13900,
       "dc": 71,
-      "reviews": 7144,
+      "reviews": 7145,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -620,7 +828,7 @@
       "price": 29500,
       "orig": 100000,
       "dc": 70,
-      "reviews": 7077,
+      "reviews": 7078,
       "score": 4.2,
       "soldOut": false,
       "endAt": "",
@@ -646,7 +854,7 @@
       "price": 11900,
       "orig": 29750,
       "dc": 60,
-      "reviews": 42,
+      "reviews": 43,
       "score": 3.7,
       "soldOut": false,
       "endAt": "",
@@ -672,7 +880,7 @@
       "price": 11900,
       "orig": 69900,
       "dc": 82,
-      "reviews": 2326,
+      "reviews": 2328,
       "score": 4.3,
       "soldOut": false,
       "endAt": "",
@@ -687,6 +895,32 @@
       "rankDelta": -22,
       "isNew": false,
       "url": "https://toss.im/_m/vvWi2cTj"
+    },
+    {
+      "id": "toss-173950603",
+      "tacaItemId": 173950603,
+      "brand": "카멕스",
+      "name": "모이스처라이징 립밤, 체리 스틱, 4.25g, 3개입, 1개",
+      "fullName": "카멕스 모이스처라이징 립밤, 체리 스틱, 4.25g, 3개입, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/YjcyNjRm/Y3pzOGJKak1VNVBHY2N4eUorTU56WGtlZkR6bnc4ZkRtalE1d3c0d3pqdz0.png",
+      "price": 9800,
+      "orig": 15000,
+      "dc": 34,
+      "reviews": 46,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 32,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/XlF7BPNa"
     },
     {
       "id": "toss-2535754781",
@@ -725,7 +959,7 @@
       "price": 8500,
       "orig": 21500,
       "dc": 74,
-      "reviews": 1684,
+      "reviews": 1686,
       "score": 3.5,
       "soldOut": false,
       "endAt": "",
@@ -751,7 +985,7 @@
       "price": 7500,
       "orig": 18900,
       "dc": 60,
-      "reviews": 538,
+      "reviews": 539,
       "score": 4.1,
       "soldOut": false,
       "endAt": "",
@@ -777,7 +1011,7 @@
       "price": 2880,
       "orig": 7900,
       "dc": 63,
-      "reviews": 2641,
+      "reviews": 2646,
       "score": 4.3,
       "soldOut": false,
       "endAt": "",
@@ -794,6 +1028,32 @@
       "url": "https://toss.im/_m/BPrVmHdB"
     },
     {
+      "id": "toss-2644552917",
+      "tacaItemId": 2644552917,
+      "brand": "배스킨라빈스",
+      "name": "레인보우 샤베트 워터, 500ml, 6개 + 피치요거트 워터, 500ml, 6개, 1세트",
+      "fullName": "배스킨라빈스 레인보우 샤베트 워터, 500ml, 6개 + 피치요거트 워터, 500ml, 6개, 1세트",
+      "img": "https://shopping.toss.im/live/temp/2026-09-04/a83819ac-4c7e-4fa3-96b3-36c8b4ffe8e4.png",
+      "price": 8000,
+      "orig": 29900,
+      "dc": 73,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 37,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/visj6mZp"
+    },
+    {
       "id": "toss-2439925031",
       "tacaItemId": 2439925031,
       "brand": "쿠킹메이트",
@@ -803,7 +1063,7 @@
       "price": 11900,
       "orig": 30000,
       "dc": 60,
-      "reviews": 1494,
+      "reviews": 1495,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -846,6 +1106,58 @@
       "url": "https://toss.im/_m/tvLo1MUA"
     },
     {
+      "id": "toss-1731195217",
+      "tacaItemId": 1731195217,
+      "brand": "킴스클럽",
+      "name": "영주 꿀당도 세척 사과, 중과, 2.5kg, 1박스",
+      "fullName": "킴스클럽 영주 꿀당도 세척 사과, 중과, 2.5kg, 1박스",
+      "img": "https://shopping.toss.im/live/taca/ai/MjE2MjA4/YmJid0IvOG1oZGJOZHRtV1RaWk9jdjFHQVQ3SmprWGVZZFFSN3lkaFdpZz0.png",
+      "price": 23900,
+      "orig": 23900,
+      "dc": 0,
+      "reviews": 111,
+      "score": 4.3,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 40,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/HTnAWlRv"
+    },
+    {
+      "id": "toss-2399121571",
+      "tacaItemId": 2399121571,
+      "brand": "건담",
+      "name": "모듬 버섯, 800g, 1개",
+      "fullName": "건담 모듬 버섯, 800g, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/OWZiMGRi/SFQ2V2JPR1RPelF5SGsyYVBIRTVQSjhZem5IeHpISFpXU3l6R2NOeHptWT0.png",
+      "price": 4480,
+      "orig": 9900,
+      "dc": 54,
+      "reviews": 1,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 41,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/1jaizPmt"
+    },
+    {
       "id": "toss-134267251",
       "tacaItemId": 134267251,
       "brand": "상하목장",
@@ -855,7 +1167,7 @@
       "price": 16900,
       "orig": 27900,
       "dc": 39,
-      "reviews": 668,
+      "reviews": 669,
       "score": 4.9,
       "soldOut": false,
       "endAt": "",
@@ -881,7 +1193,7 @@
       "price": 6910,
       "orig": 22000,
       "dc": 68,
-      "reviews": 4707,
+      "reviews": 4708,
       "score": 4.5,
       "soldOut": false,
       "endAt": "",
@@ -924,6 +1236,32 @@
       "url": "https://toss.im/_m/tZYJ7eJj"
     },
     {
+      "id": "toss-33476093",
+      "tacaItemId": 33476093,
+      "brand": "넛츠그린",
+      "name": "제로스파클링, 자몽블랙티, 340ml, 6개",
+      "fullName": "넛츠그린 제로스파클링, 자몽블랙티, 340ml, 6개",
+      "img": "https://shopping.toss.im/live/product/8672915/30315309-da24-4fac-bffd-a7de0b110922.jpeg",
+      "price": 4500,
+      "orig": 12000,
+      "dc": 62,
+      "reviews": 1,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 45,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/zC5Ppmnj"
+    },
+    {
       "id": "toss-2634967517",
       "tacaItemId": 2634967517,
       "brand": "제주",
@@ -933,7 +1271,7 @@
       "price": 14900,
       "orig": 59900,
       "dc": 75,
-      "reviews": 873,
+      "reviews": 874,
       "score": 4.1,
       "soldOut": false,
       "endAt": "",
@@ -1195,7 +1533,7 @@
       "price": 17900,
       "orig": 59900,
       "dc": 70,
-      "reviews": 3507,
+      "reviews": 3508,
       "score": 4.3,
       "soldOut": false,
       "endAt": "",
@@ -1379,7 +1717,7 @@
       "price": 22880,
       "orig": 59000,
       "dc": 61,
-      "reviews": 2748,
+      "reviews": 2751,
       "score": 4.5,
       "soldOut": false,
       "endAt": "",
@@ -1420,6 +1758,58 @@
       "rankDelta": 35,
       "isNew": false,
       "url": "https://toss.im/_m/7K2NdFtt"
+    },
+    {
+      "id": "toss-62644459",
+      "tacaItemId": 62644459,
+      "brand": "겨울",
+      "name": "스트라이프 포인트 파일 중목 양말, 색상랜덤, 10켤레",
+      "fullName": "겨울 스트라이프 포인트 파일 중목 양말, 색상랜덤, 10켤레",
+      "img": "https://shopping.toss.im/live/temp/2026-01-19/f34fabdc-060e-42ed-8fef-a9f48b09968f.jpeg",
+      "price": 9800,
+      "orig": 20000,
+      "dc": 51,
+      "reviews": 313,
+      "score": 4.2,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 65,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/bghobSwy"
+    },
+    {
+      "id": "toss-143999915",
+      "tacaItemId": 143999915,
+      "brand": "뉴트리엘",
+      "name": "이너포뮬러 샐그린 27, 500mg, 60정, 1개",
+      "fullName": "뉴트리엘 이너포뮬러 샐그린 27, 500mg, 60정, 1개",
+      "img": "https://shopping.toss.im/live/temp/2026-08-27/16df1654-da46-4470-9c12-f834409b874a.jpeg",
+      "price": 19750,
+      "orig": 37500,
+      "dc": 47,
+      "reviews": 63,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 66,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/FgG28781"
     },
     {
       "id": "toss-2578484649",
@@ -1483,7 +1873,7 @@
       "price": 4900,
       "orig": 59000,
       "dc": 91,
-      "reviews": 694,
+      "reviews": 695,
       "score": 4.4,
       "soldOut": false,
       "endAt": "",
@@ -1527,6 +1917,58 @@
       "url": "https://toss.im/_m/tK0R6AMa"
     },
     {
+      "id": "toss-2522466673",
+      "tacaItemId": 2522466673,
+      "brand": "전남무안",
+      "name": "양파, 중, 5kg, 1박스",
+      "fullName": "전남무안 양파, 중, 5kg, 1박스",
+      "img": "https://shopping.toss.im/live/temp/2026-07-22/b288b199-05e7-4680-9d78-a6f764e9a62a.jpeg",
+      "price": 6790,
+      "orig": 14200,
+      "dc": 52,
+      "reviews": 20,
+      "score": 4.3,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 72,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/7kZSqFBu"
+    },
+    {
+      "id": "toss-172601957",
+      "tacaItemId": 172601957,
+      "brand": "미디어",
+      "name": "스팀 에어프라이어 MF-S75W, 화이트, 1개",
+      "fullName": "미디어 스팀 에어프라이어 MF-S75W, 화이트, 1개",
+      "img": "https://shopping.toss.im/live/temp/2025-12-19/390b97a4-306e-46e0-9f08-de0890502ba6.jpeg",
+      "price": 147900,
+      "orig": 149000,
+      "dc": 0,
+      "reviews": 2,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 73,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/V23gQJlx"
+    },
+    {
       "id": "toss-2317810449",
       "tacaItemId": 2317810449,
       "brand": "전라도",
@@ -1562,7 +2004,7 @@
       "price": 7680,
       "orig": 19800,
       "dc": 61,
-      "reviews": 58359,
+      "reviews": 58361,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -1615,7 +2057,7 @@
       "price": 32900,
       "orig": 65900,
       "dc": 50,
-      "reviews": 15067,
+      "reviews": 15069,
       "score": 4.4,
       "soldOut": false,
       "endAt": "",
@@ -1641,7 +2083,7 @@
       "price": 11800,
       "orig": 16900,
       "dc": 30,
-      "reviews": 1655,
+      "reviews": 1656,
       "score": 4.6,
       "soldOut": false,
       "endAt": "",
@@ -1737,6 +2179,32 @@
       "url": "https://toss.im/_m/LzLC6Wh3"
     },
     {
+      "id": "toss-2619448395",
+      "tacaItemId": 2619448395,
+      "brand": "국내산",
+      "name": "햇 수미감자, 대, 5kg, 1박스",
+      "fullName": "국내산 햇 수미감자, 대, 5kg, 1박스",
+      "img": "https://shopping.toss.im/live/temp/2026-08-17/766df41b-6ac7-4cc5-8733-08098dff0c3f.png",
+      "price": 9900,
+      "orig": 20900,
+      "dc": 52,
+      "reviews": 41,
+      "score": 4.2,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 82,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/Bag3n36w"
+    },
+    {
       "id": "toss-2636876335",
       "tacaItemId": 2636876335,
       "brand": "황도복숭아,",
@@ -1799,7 +2267,7 @@
       "price": 14900,
       "orig": 72000,
       "dc": 79,
-      "reviews": 472,
+      "reviews": 473,
       "score": 4.3,
       "soldOut": false,
       "endAt": "",
@@ -1841,6 +2309,32 @@
       "rankDelta": null,
       "isNew": true,
       "url": "https://toss.im/_m/z2mk8JCn"
+    },
+    {
+      "id": "toss-7831065",
+      "tacaItemId": 7831065,
+      "brand": "포항",
+      "name": "구룡포 반건조 오징어, 700g 내외, 10마리",
+      "fullName": "포항 구룡포 반건조 오징어, 700g 내외, 10마리",
+      "img": "https://shopping.toss.im/live/taca/ai/YTYyOWI0/WWRtSEJyc0xkbWxMSnZKVHJ1UHJjVFN5cXh3OVd1dVB0TWRlbzB0UkJPdz0.png",
+      "price": 18690,
+      "orig": 26900,
+      "dc": 30,
+      "reviews": 362,
+      "score": 4.0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 87,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/H5oL4Iid"
     },
     {
       "id": "toss-133303383",
@@ -2112,7 +2606,7 @@
       "price": 10900,
       "orig": 16500,
       "dc": 33,
-      "reviews": 9547,
+      "reviews": 9549,
       "score": 4.5,
       "soldOut": false,
       "endAt": "",
@@ -2127,6 +2621,32 @@
       "rankDelta": -15,
       "isNew": false,
       "url": "https://toss.im/_m/Lv14W0K9"
+    },
+    {
+      "id": "toss-152207643",
+      "tacaItemId": 152207643,
+      "brand": "사우스문",
+      "name": "무좀치료 스프레이, 60ml, 2개",
+      "fullName": "사우스문 무좀치료 스프레이, 60ml, 2개",
+      "img": "https://shopping.toss.im/live/taca/ai/ZmNjZmVm/Y1laa1BBVDVJYXN5aTRveFl3c3B0akVZaHJHelk4NG5EWm4wbzA3RFlWND0.png",
+      "price": 13573,
+      "orig": 38900,
+      "dc": 65,
+      "reviews": 1271,
+      "score": 4.2,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "best"
+      ],
+      "todayRank": 0,
+      "bestRank": 99,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": true,
+      "url": "https://toss.im/_m/3orrL50B"
     },
     {
       "id": "toss-846666663",
@@ -2181,6 +2701,32 @@
       "url": "https://toss.im/_m/jUzemxt8"
     },
     {
+      "id": "toss-92778185",
+      "tacaItemId": 92778185,
+      "brand": "코오롱제약",
+      "name": "올인원 하루한알 멀티비타민, 900mg, 60정, 3박스",
+      "fullName": "코오롱제약 올인원 하루한알 멀티비타민, 900mg, 60정, 3박스",
+      "img": "https://shopping.toss.im/live/taca/ai/MzMzMTJm/RDhWREorTnRoNTRQa1R0bUV6a09Rem1CdTJhY21ZODg3SEhpV3pYaytjdz0.png",
+      "price": 12900,
+      "orig": 130000,
+      "dc": 90,
+      "reviews": 114,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 28,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/dTk7cWKk"
+    },
+    {
       "id": "toss-1619814653",
       "tacaItemId": 1619814653,
       "brand": "에이팔란스",
@@ -2233,6 +2779,32 @@
       "url": "https://toss.im/_m/nBMSVIGp"
     },
     {
+      "id": "toss-10061047",
+      "tacaItemId": 10061047,
+      "brand": "셀트리온",
+      "name": "셀린온 바이오가드 리프팅 스킨케어 7종 세트, 1세트",
+      "fullName": "셀트리온 셀린온 바이오가드 리프팅 스킨케어 7종 세트, 1세트",
+      "img": "https://shopping.toss.im/live/taca/ai/ZDJkYmRj/QVBaMlA4RklQRnVrTmxyTm5qbHNzTnRib1RVOEg0VlBQQTd4a2VQcWRHNlU.png",
+      "price": 61900,
+      "orig": 598000,
+      "dc": 89,
+      "reviews": 132,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 68,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/zGvo2Phm"
+    },
+    {
       "id": "toss-2310852455",
       "tacaItemId": 2310852455,
       "brand": "앙쥬",
@@ -2275,7 +2847,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 80,
+      "todayRank": 29,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -2294,7 +2866,7 @@
       "price": 8810,
       "orig": 59900,
       "dc": 85,
-      "reviews": 1435,
+      "reviews": 1436,
       "score": 4.4,
       "soldOut": false,
       "endAt": "",
@@ -2309,6 +2881,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/7VvHNppj"
+    },
+    {
+      "id": "toss-2626165065",
+      "tacaItemId": 2626165065,
+      "brand": "트로피컬",
+      "name": "핀턱 와이드 팬츠, 네이비, 66, 1장",
+      "fullName": "트로피컬 핀턱 와이드 팬츠, 네이비, 66, 1장",
+      "img": "https://shopping.toss.im/live/temp/2026-08-21/cc3f9483-888a-4caa-b6a5-0d4a07bd1fd9.jpeg",
+      "price": 4900,
+      "orig": 29900,
+      "dc": 83,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 65,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/zkwEKyxn"
     },
     {
       "id": "toss-1479814381",
@@ -2346,7 +2944,7 @@
       "price": 15900,
       "orig": 99000,
       "dc": 83,
-      "reviews": 2023,
+      "reviews": 2025,
       "score": 4.5,
       "soldOut": false,
       "endAt": "",
@@ -2361,6 +2959,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/fYVjsKQv"
+    },
+    {
+      "id": "toss-56375739",
+      "tacaItemId": 56375739,
+      "brand": "프룻프룻",
+      "name": "건조 능이버섯, 100g, 1개",
+      "fullName": "프룻프룻 건조 능이버섯, 100g, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/Yjg1OGFi/YzFvbSt0NWdma1RQeFBvbXpOVDZCUWJEZGJZM1pkdVRmbUREaWxBamhVRT0.png",
+      "price": 20900,
+      "orig": 119900,
+      "dc": 82,
+      "reviews": 472,
+      "score": 4.3,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 27,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/XP7hBq2q"
     },
     {
       "id": "toss-671978337",
@@ -2439,6 +3063,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/torm5v3b"
+    },
+    {
+      "id": "toss-861137267",
+      "tacaItemId": 861137267,
+      "brand": "투라",
+      "name": "리프팅 여신 속눈썹, 네추럴, 2개",
+      "fullName": "투라 리프팅 여신 속눈썹, 네추럴, 2개",
+      "img": "https://shopping.toss.im/live/temp/2026-02-20/7126fa58-63bf-4443-a3be-7359c5dad167.jpeg",
+      "price": 12400,
+      "orig": 66500,
+      "dc": 81,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 90,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/XkCYYier"
     },
     {
       "id": "toss-1731148815",
@@ -2535,7 +3185,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 3,
+      "todayRank": 31,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -2543,6 +3193,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/r6A1O416"
+    },
+    {
+      "id": "toss-134539197",
+      "tacaItemId": 134539197,
+      "brand": "성분에디터",
+      "name": "실크 펩타이드 인텐시브 리프팅앰플, 60ml, 2개",
+      "fullName": "성분에디터 실크 펩타이드 인텐시브 리프팅앰플, 60ml, 2개",
+      "img": "https://shopping.toss.im/live/temp/2026-06-08/3143e9e0-1748-4d88-aa2d-13a653dd7771.jpeg",
+      "price": 29900,
+      "orig": 150000,
+      "dc": 80,
+      "reviews": 68,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 83,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/lsJjlvws"
     },
     {
       "id": "toss-264130953",
@@ -2606,7 +3282,7 @@
       "price": 19900,
       "orig": 99000,
       "dc": 79,
-      "reviews": 1100,
+      "reviews": 1102,
       "score": 4.3,
       "soldOut": false,
       "endAt": "",
@@ -2805,6 +3481,32 @@
       "url": "https://toss.im/_m/XmMJ5Qwy"
     },
     {
+      "id": "toss-11101751",
+      "tacaItemId": 11101751,
+      "brand": "아크로",
+      "name": "버즈러닝 오픈타입 스포츠 블루투스 이어폰 G9, 블랙, 1개",
+      "fullName": "아크로 버즈러닝 오픈타입 스포츠 블루투스 이어폰 G9, 블랙, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/YTJmMDBm/QUxqY3Q0Tk5MWE56MzRST1BxQW53OU1kL0xnRDQ0MkhjMVgyYWEyR0V4WEU.png",
+      "price": 17900,
+      "orig": 79800,
+      "dc": 77,
+      "reviews": 308,
+      "score": 4.1,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 71,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/xNWwYBYu"
+    },
+    {
       "id": "toss-157010575",
       "tacaItemId": 157010575,
       "brand": "사운독스",
@@ -2857,6 +3559,32 @@
       "url": "https://toss.im/_m/pMjSUvDe"
     },
     {
+      "id": "toss-175887171",
+      "tacaItemId": 175887171,
+      "brand": "종아리",
+      "name": "압박밴드, 블랙, FREE, 1개",
+      "fullName": "종아리 압박밴드, 블랙, FREE, 1개",
+      "img": "https://shopping.toss.im/live/temp/2025-08-29/30973f36-18ac-4469-b1a5-8a056a982a48.png",
+      "price": 5990,
+      "orig": 25900,
+      "dc": 76,
+      "reviews": 20,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 62,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/PCT3dutx"
+    },
+    {
       "id": "toss-38643811",
       "tacaItemId": 38643811,
       "brand": "스테인리스",
@@ -2873,7 +3601,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 11,
+      "todayRank": 76,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -2935,6 +3663,58 @@
       "url": "https://toss.im/_m/bxsdDnFp"
     },
     {
+      "id": "toss-2641029817",
+      "tacaItemId": 2641029817,
+      "brand": "유럽식",
+      "name": "보관함, 화이트, 20개",
+      "fullName": "유럽식 보관함, 화이트, 20개",
+      "img": "https://shopping.toss.im/live/temp/2026-08-31/325c1a07-2ff7-44e9-adb4-0a8685259170.jpeg",
+      "price": 9900,
+      "orig": 39900,
+      "dc": 75,
+      "reviews": 6,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 18,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/P7ihIBZA"
+    },
+    {
+      "id": "toss-2422858481",
+      "tacaItemId": 2422858481,
+      "brand": "팬톤",
+      "name": "20W QC 3.0 듀얼포트 보조배터리, PTPB-04, 10000mAh, 네이비, 1개",
+      "fullName": "팬톤 20W QC 3.0 듀얼포트 보조배터리, PTPB-04, 10000mAh, 네이비, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/NjkzZjQz/V2hhdzlHN1NTMlh5M2k2VUMyVzhYc2xwdHBLbHNOaCtMK0h3SHRRN0QrRT0.png",
+      "price": 9900,
+      "orig": 39900,
+      "dc": 75,
+      "reviews": 22,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 60,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/fbHsCGLy"
+    },
+    {
       "id": "toss-2635743945",
       "tacaItemId": 2635743945,
       "brand": "미라클",
@@ -2944,7 +3724,7 @@
       "price": 9900,
       "orig": 39600,
       "dc": 75,
-      "reviews": 189,
+      "reviews": 190,
       "score": 4.0,
       "soldOut": false,
       "endAt": "",
@@ -3117,6 +3897,58 @@
       "url": "https://toss.im/_m/jAJgwJ7l"
     },
     {
+      "id": "toss-9256003",
+      "tacaItemId": 9256003,
+      "brand": "두발로",
+      "name": "노밴드 무압박 중목 양말, 색상혼합, 남성용, 8켤레",
+      "fullName": "두발로 노밴드 무압박 중목 양말, 색상혼합, 남성용, 8켤레",
+      "img": "https://shopping.toss.im/live/taca/ai/ZGY4MzVm/QUxyVlhTdStWRmNwaDFiUHBYZkFzNERaMU9qdDExT3VoVlJLdW5WOUw5ZFM.png",
+      "price": 7900,
+      "orig": 30000,
+      "dc": 73,
+      "reviews": 25,
+      "score": 3.8,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 57,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/LMeRP2fC"
+    },
+    {
+      "id": "toss-2602802895",
+      "tacaItemId": 2602802895,
+      "brand": "농협홍삼",
+      "name": "한삼인 홍삼진골드 선물세트, 50ml, 30포, 1개",
+      "fullName": "농협홍삼 한삼인 홍삼진골드 선물세트, 50ml, 30포, 1개",
+      "img": "https://shopping.toss.im/live/temp/2026-09-01/6d00b58c-fa93-434f-a2de-713addd1350c.jpeg",
+      "price": 26800,
+      "orig": 100000,
+      "dc": 73,
+      "reviews": 3,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 84,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/hXzyKwi2"
+    },
+    {
       "id": "toss-2363230809",
       "tacaItemId": 2363230809,
       "brand": "빌리스홈",
@@ -3273,6 +4105,32 @@
       "url": "https://toss.im/_m/5kX5J4Vl"
     },
     {
+      "id": "toss-2480391053",
+      "tacaItemId": 2480391053,
+      "brand": "슈퍼딥큐",
+      "name": "캡슐세제 플라워코튼향, 8g, 100개입, 2개",
+      "fullName": "슈퍼딥큐 캡슐세제 플라워코튼향, 8g, 100개입, 2개",
+      "img": "https://shopping.toss.im/live/temp/2026-07-15/54322204-148e-48cf-a711-fba1c5920742.png",
+      "price": 10900,
+      "orig": 39900,
+      "dc": 72,
+      "reviews": 712,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 35,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/vms5xoN4"
+    },
+    {
       "id": "toss-720519285",
       "tacaItemId": 720519285,
       "brand": "갓성비",
@@ -3341,7 +4199,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 40,
+      "todayRank": 43,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -3453,6 +4311,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/JF1quRBC"
+    },
+    {
+      "id": "toss-2577203997",
+      "tacaItemId": 2577203997,
+      "brand": "리스앤리드",
+      "name": "나이아신아마이드 10% 포어 리파이닝 모공 세럼, 30ml, 1개",
+      "fullName": "리스앤리드 나이아신아마이드 10% 포어 리파이닝 모공 세럼, 30ml, 1개",
+      "img": "https://shopping.toss.im/live/temp/2026-08-04/27fdd19d-949e-4f18-a0b3-3de1cc3dcdc7.jpeg",
+      "price": 9600,
+      "orig": 32000,
+      "dc": 70,
+      "reviews": 12,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 87,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/Dm0tDj17"
     },
     {
       "id": "toss-2226209709",
@@ -3637,32 +4521,6 @@
       "url": "https://toss.im/_m/3jxbr95A"
     },
     {
-      "id": "toss-301940091",
-      "tacaItemId": 301940091,
-      "brand": "센토",
-      "name": "프라임 초미세 딥클린 점보 칫솔, 12개입, 2개",
-      "fullName": "센토 프라임 초미세 딥클린 점보 칫솔, 12개입, 2개",
-      "img": "https://shopping.toss.im/live/temp/2025-11-05/3285eccd-790e-4bb3-a732-f548238d5a0b.jpeg",
-      "price": 15900,
-      "orig": 49800,
-      "dc": 68,
-      "reviews": 466,
-      "score": 4.6,
-      "soldOut": false,
-      "endAt": "2026-09-05T23:59:59+09:00",
-      "sources": [
-        "today"
-      ],
-      "todayRank": 14,
-      "bestRank": 0,
-      "catRank": 0,
-      "catId": 0,
-      "cat": "",
-      "rankDelta": null,
-      "isNew": false,
-      "url": "https://toss.im/_m/txxOkWu8"
-    },
-    {
       "id": "toss-151503603",
       "tacaItemId": 151503603,
       "brand": "인사이디",
@@ -3679,7 +4537,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 24,
+      "todayRank": 23,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -3687,6 +4545,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/tbUXtnK9"
+    },
+    {
+      "id": "toss-301940091",
+      "tacaItemId": 301940091,
+      "brand": "센토",
+      "name": "프라임 초미세 딥클린 점보 칫솔, 12개입, 2개",
+      "fullName": "센토 프라임 초미세 딥클린 점보 칫솔, 12개입, 2개",
+      "img": "https://shopping.toss.im/live/temp/2025-11-05/3285eccd-790e-4bb3-a732-f548238d5a0b.jpeg",
+      "price": 15900,
+      "orig": 49800,
+      "dc": 68,
+      "reviews": 467,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 48,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/txxOkWu8"
     },
     {
       "id": "toss-389796709",
@@ -3791,6 +4675,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/vIjUiy42"
+    },
+    {
+      "id": "toss-340842209",
+      "tacaItemId": 340842209,
+      "brand": "미오데칼코마니",
+      "name": "림프팟 EMS 괄사 마사지기, 1개",
+      "fullName": "미오데칼코마니 림프팟 EMS 괄사 마사지기, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/ZmU1N2My/QU1aNEdrZEZ1cGFYNG1DSGgvaXhwd2R1ZVJtREF6c2h3d0lkV1BteGpQNTU.png",
+      "price": 20900,
+      "orig": 65000,
+      "dc": 67,
+      "reviews": 50,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 14,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/52ier0ic"
     },
     {
       "id": "toss-2164156071",
@@ -3923,6 +4833,32 @@
       "url": "https://toss.im/_m/R7ow1Yii"
     },
     {
+      "id": "toss-1503699559",
+      "tacaItemId": 1503699559,
+      "brand": "발이",
+      "name": "편한 카바 밴딩 중목 양말, 여성용, 화이트 10켤레 + 블랙 10켤레, 20켤레",
+      "fullName": "발이 편한 카바 밴딩 중목 양말, 여성용, 화이트 10켤레 + 블랙 10켤레, 20켤레",
+      "img": "https://shopping.toss.im/live/taca/ai/OTRlNjBj/QU9Yd3N3RXhqMDVUaWg4emhjUjRJSVJScTUxNnFoUUNOZi91QUlRaTQ5OTY.png",
+      "price": 9700,
+      "orig": 30000,
+      "dc": 67,
+      "reviews": 71,
+      "score": 4.3,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 2,
+      "catId": 34635,
+      "cat": "패션의류잡화",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/TzY9exew"
+    },
+    {
       "id": "toss-1049211703",
       "tacaItemId": 1049211703,
       "brand": "에어핏",
@@ -3940,7 +4876,7 @@
         "today",
         "category"
       ],
-      "todayRank": 63,
+      "todayRank": 67,
       "bestRank": 0,
       "catRank": 6,
       "catId": 34635,
@@ -4000,6 +4936,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/rf5Dh1Lk"
+    },
+    {
+      "id": "toss-194314011",
+      "tacaItemId": 194314011,
+      "brand": "딥루트",
+      "name": "와이드 버뮤다 팬츠, 그레이, 2개",
+      "fullName": "딥루트 와이드 버뮤다 팬츠, 그레이, 2개",
+      "img": "https://shopping.toss.im/live/taca/ai/ZjM4NjJk/QVAxV0lQL0JBb0Y5R3U1WkFZbWZWcXBuQWY4L3Z1Q01nbVRmQVBwSEZQOD0.png",
+      "price": 9900,
+      "orig": 29900,
+      "dc": 66,
+      "reviews": 7,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 8,
+      "catId": 34635,
+      "cat": "패션의류잡화",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/RAiXYdvy"
     },
     {
       "id": "toss-2363053605",
@@ -4236,32 +5198,6 @@
       "url": "https://toss.im/_m/JPwSeJIo"
     },
     {
-      "id": "toss-178334193",
-      "tacaItemId": 178334193,
-      "brand": "주방미학",
-      "name": "심플 미니 통삼중 압력솥, 1.2L, 1개",
-      "fullName": "주방미학 심플 미니 통삼중 압력솥, 1.2L, 1개",
-      "img": "https://shopping.toss.im/live/taca/ai/ZjM2Mzk5/QUt4Z3RSK1Q1dGJiWGhwTGNVajVIU3p4eDdMT1BueGtNR3VrbjRUaEUyclM.png",
-      "price": 35900,
-      "orig": 99000,
-      "dc": 63,
-      "reviews": 1182,
-      "score": 4.5,
-      "soldOut": false,
-      "endAt": "2026-09-05T23:59:59+09:00",
-      "sources": [
-        "today"
-      ],
-      "todayRank": 4,
-      "bestRank": 0,
-      "catRank": 0,
-      "catId": 0,
-      "cat": "",
-      "rankDelta": null,
-      "isNew": false,
-      "url": "https://toss.im/_m/rwoid6bg"
-    },
-    {
       "id": "toss-7984337",
       "tacaItemId": 7984337,
       "brand": "닥터풋",
@@ -4278,7 +5214,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 87,
+      "todayRank": 17,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -4286,6 +5222,58 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/zJCeJrdg"
+    },
+    {
+      "id": "toss-178334193",
+      "tacaItemId": 178334193,
+      "brand": "주방미학",
+      "name": "심플 미니 통삼중 압력솥, 1.2L, 1개",
+      "fullName": "주방미학 심플 미니 통삼중 압력솥, 1.2L, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/ZjM2Mzk5/QUt4Z3RSK1Q1dGJiWGhwTGNVajVIU3p4eDdMT1BueGtNR3VrbjRUaEUyclM.png",
+      "price": 35900,
+      "orig": 99000,
+      "dc": 63,
+      "reviews": 1182,
+      "score": 4.5,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 59,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/rwoid6bg"
+    },
+    {
+      "id": "toss-1736438091",
+      "tacaItemId": 1736438091,
+      "brand": "국내산",
+      "name": "닭한마리 닭도리탕, 1kg, 2-3인분, 1개",
+      "fullName": "국내산 닭한마리 닭도리탕, 1kg, 2-3인분, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/MTAxMzM4/QUp1WmhuYk1VMDB4WG56N014OGJETHg0Wk04bU9QQTR4b0hESGxvZlF0WnQ.png",
+      "price": 10900,
+      "orig": 29900,
+      "dc": 63,
+      "reviews": 369,
+      "score": 3.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 61,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/1oKUhnNe"
     },
     {
       "id": "toss-807365761",
@@ -4297,7 +5285,7 @@
       "price": 10900,
       "orig": 29900,
       "dc": 63,
-      "reviews": 3356,
+      "reviews": 3357,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -4330,7 +5318,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 21,
+      "todayRank": 52,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -4366,32 +5354,6 @@
       "url": "https://toss.im/_m/BFAKQPdq"
     },
     {
-      "id": "toss-2517388727",
-      "tacaItemId": 2517388727,
-      "brand": "부안댁",
-      "name": "진한 참기름, 350ml, 2개",
-      "fullName": "부안댁 진한 참기름, 350ml, 2개",
-      "img": "https://shopping.toss.im/live/taca/ai/v2/NWU5ZGNl/QUkxTE9jUkVITWVyMm8yR0ZLdFdPVXZVS2VhVWF1VGsyK3ZsbTMrVkdqczA.png",
-      "price": 11900,
-      "orig": 30900,
-      "dc": 61,
-      "reviews": 269,
-      "score": 4.4,
-      "soldOut": false,
-      "endAt": "2026-09-05T23:59:59+09:00",
-      "sources": [
-        "today"
-      ],
-      "todayRank": 23,
-      "bestRank": 0,
-      "catRank": 0,
-      "catId": 0,
-      "cat": "",
-      "rankDelta": null,
-      "isNew": false,
-      "url": "https://toss.im/_m/z5rsstch"
-    },
-    {
       "id": "toss-2032253981",
       "tacaItemId": 2032253981,
       "brand": "센토",
@@ -4408,7 +5370,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 45,
+      "todayRank": 26,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -4416,6 +5378,58 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/l1piYsSg"
+    },
+    {
+      "id": "toss-1915063847",
+      "tacaItemId": 1915063847,
+      "brand": "경면주사",
+      "name": "팔찌, 보현보살(뱀띠, 용띠), 1개",
+      "fullName": "경면주사 팔찌, 보현보살(뱀띠, 용띠), 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/MzMyMWZm/QUxhWGFTdHBhU0U4eGdlOFRKN0VWc3kxak5PazNwaFB0Q2hrMHBJaDA3MXI.png",
+      "price": 8500,
+      "orig": 21900,
+      "dc": 61,
+      "reviews": 52,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 75,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/LZvnAO2g"
+    },
+    {
+      "id": "toss-2517388727",
+      "tacaItemId": 2517388727,
+      "brand": "부안댁",
+      "name": "진한 참기름, 350ml, 2개",
+      "fullName": "부안댁 진한 참기름, 350ml, 2개",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/NWU5ZGNl/QUkxTE9jUkVITWVyMm8yR0ZLdFdPVXZVS2VhVWF1VGsyK3ZsbTMrVkdqczA.png",
+      "price": 11900,
+      "orig": 30900,
+      "dc": 61,
+      "reviews": 269,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 81,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/z5rsstch"
     },
     {
       "id": "toss-2032253997",
@@ -4505,7 +5519,7 @@
       "price": 8900,
       "orig": 22900,
       "dc": 61,
-      "reviews": 9707,
+      "reviews": 9709,
       "score": 4.5,
       "soldOut": false,
       "endAt": "",
@@ -4583,7 +5597,7 @@
       "price": 10790,
       "orig": 27900,
       "dc": 61,
-      "reviews": 3637,
+      "reviews": 3638,
       "score": 4.9,
       "soldOut": false,
       "endAt": "",
@@ -4598,6 +5612,136 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/JuE8wE5q"
+    },
+    {
+      "id": "toss-515386817",
+      "tacaItemId": 515386817,
+      "brand": "뉴트리엘",
+      "name": "루티브8, 60정, 1개",
+      "fullName": "뉴트리엘 루티브8, 60정, 1개",
+      "img": "https://shopping.toss.im/live/temp/2025-12-31/db2a6e65-eb21-4c7e-8a66-c6830acb52d2.jpeg",
+      "price": 17900,
+      "orig": 40500,
+      "dc": 60,
+      "reviews": 34,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 19,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/ZIOYby0m"
+    },
+    {
+      "id": "toss-640113377",
+      "tacaItemId": 640113377,
+      "brand": "나우푸드",
+      "name": "비오틴 5000mcg, 290mg, 60캡슐, 1개",
+      "fullName": "나우푸드 비오틴 5000mcg, 290mg, 60캡슐, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/MmVlMGFl/YVRNeWZGSXN6Y09QdzNZOGVUdWJ3ZGJzN1VNbmdUR2MrSHJPNHdlRXRWdz0.png",
+      "price": 9800,
+      "orig": 25000,
+      "dc": 60,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 46,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/TFEpIfih"
+    },
+    {
+      "id": "toss-151384765",
+      "tacaItemId": 151384765,
+      "brand": "전라도할매",
+      "name": "배추겉절이, 5kg, 1박스",
+      "fullName": "전라도할매 배추겉절이, 5kg, 1박스",
+      "img": "https://shopping.toss.im/live/taca/ai/OWRhZGI5/QUxnT3VZV2J4VGJIVFZUWDM3K2w1Z09QN0hSdzZRbHNSbEs1RjdzQTBwM0s.png",
+      "price": 19900,
+      "orig": 49900,
+      "dc": 60,
+      "reviews": 251,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 49,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/LG6QRFvj"
+    },
+    {
+      "id": "toss-474742025",
+      "tacaItemId": 474742025,
+      "brand": "루브스킨",
+      "name": "맥주효모 샴푸, 화이트머스크향, 1L, 2개",
+      "fullName": "루브스킨 맥주효모 샴푸, 화이트머스크향, 1L, 2개",
+      "img": "https://shopping.toss.im/live/temp/2026-01-09/786a8df0-ddbf-489c-a213-8c8fe7a06d44.jpeg",
+      "price": 12590,
+      "orig": 32000,
+      "dc": 60,
+      "reviews": 92,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 63,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/5ooG47Lk"
+    },
+    {
+      "id": "toss-386923977",
+      "tacaItemId": 386923977,
+      "brand": "은율",
+      "name": "리얼 콜라겐 세럼, 50ml, 3개",
+      "fullName": "은율 리얼 콜라겐 세럼, 50ml, 3개",
+      "img": "https://shopping.toss.im/live/taca/ai/M2IwODA0/WTh6T2NwbmpNeHhrNVcyR1d6T2FjeEdPWkRra1p6TWIwekhNeGthY1lqaz0.png",
+      "price": 7400,
+      "orig": 18500,
+      "dc": 60,
+      "reviews": 186,
+      "score": 4.5,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 82,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/hs6x7qvo"
     },
     {
       "id": "toss-2534412495",
@@ -4635,7 +5779,7 @@
       "price": 13900,
       "orig": 34900,
       "dc": 60,
-      "reviews": 2425,
+      "reviews": 2426,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -4713,7 +5857,7 @@
       "price": 3900,
       "orig": 9900,
       "dc": 60,
-      "reviews": 485,
+      "reviews": 486,
       "score": 3.9,
       "soldOut": false,
       "endAt": "",
@@ -4798,7 +5942,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 65,
+      "todayRank": 5,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -4869,7 +6013,7 @@
       "price": 24900,
       "orig": 59800,
       "dc": 58,
-      "reviews": 8796,
+      "reviews": 8797,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -4902,7 +6046,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 2,
+      "todayRank": 73,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -4990,6 +6134,58 @@
       "url": "https://toss.im/_m/7luwfadi"
     },
     {
+      "id": "toss-173483063",
+      "tacaItemId": 173483063,
+      "brand": "신고",
+      "name": "배, 가정용, 1.5kg, 4-5과, 1박스",
+      "fullName": "신고 배, 가정용, 1.5kg, 4-5과, 1박스",
+      "img": "https://shopping.toss.im/live/taca/ai/NjQ2YzA5/ZGF6bXpBbkwwUGZCUVRBNDNPUkFrTFV0cGJ0UU5CV2tsN3hYckV1YnFqMD0.png",
+      "price": 6900,
+      "orig": 15700,
+      "dc": 56,
+      "reviews": 110,
+      "score": 3.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 33,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/5apMYN1q"
+    },
+    {
+      "id": "toss-2294838533",
+      "tacaItemId": 2294838533,
+      "brand": "모노블",
+      "name": "25W 2포트 초고속 가정용 충전기 + 45W 2m C to C 케이블 세트, 화이트, 1개",
+      "fullName": "모노블 25W 2포트 초고속 가정용 충전기 + 45W 2m C to C 케이블 세트, 화이트, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/OWY0Nzli/TTgvT1VqM3hsMmJweG5qbjV4eHNjT2N4a3pMRm1uYVdPdVRMSEJsUUdPRT0.png",
+      "price": 7800,
+      "orig": 18000,
+      "dc": 56,
+      "reviews": 2,
+      "score": 4.5,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 66,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/VmRqO2ir"
+    },
+    {
       "id": "toss-86460339",
       "tacaItemId": 86460339,
       "brand": "한경희",
@@ -5006,7 +6202,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 67,
+      "todayRank": 69,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -5040,6 +6236,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/3ebYHzVA"
+    },
+    {
+      "id": "toss-2642852795",
+      "tacaItemId": 2642852795,
+      "brand": "EMS",
+      "name": "스마트 발 마사지기, 리모컨 불포함, 블랙, 1개",
+      "fullName": "EMS 스마트 발 마사지기, 리모컨 불포함, 블랙, 1개",
+      "img": "https://shopping.toss.im/live/temp/2025-12-15/5d53bc13-b563-4692-819f-8b7fd4ed8380.jpeg",
+      "price": 9506,
+      "orig": 22000,
+      "dc": 56,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 6,
+      "catId": 16443,
+      "cat": "가전/디지털",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/xB2SmLBn"
     },
     {
       "id": "toss-2481106289",
@@ -5170,6 +6392,58 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/DPOpxW3m"
+    },
+    {
+      "id": "toss-1131588733",
+      "tacaItemId": 1131588733,
+      "brand": "알바레즈",
+      "name": "엑스트라 버진 올리브오일, 1L, 1병",
+      "fullName": "알바레즈 엑스트라 버진 올리브오일, 1L, 1병",
+      "img": "https://shopping.toss.im/live/taca/ai/MzBmNzI5/YUhRM3VaZUQzV1pxZkhmWm5jT2RKMVkrNTlycTFCNnZGYXZuM3VwVS8vOD0.png",
+      "price": 15980,
+      "orig": 35900,
+      "dc": 55,
+      "reviews": 83,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 36,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/Rh2Pll2v"
+    },
+    {
+      "id": "toss-146213883",
+      "tacaItemId": 146213883,
+      "brand": "선풍기",
+      "name": "커버, 소형, 블루, 2개",
+      "fullName": "선풍기 커버, 소형, 블루, 2개",
+      "img": "https://shopping.toss.im/live/temp/2025-07-24/8622c1bb-030a-43ea-80bb-49c890ae7059.jpeg",
+      "price": 4900,
+      "orig": 11000,
+      "dc": 55,
+      "reviews": 15,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 20,
+      "catId": 14817,
+      "cat": "가구/홈데코",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/htXNSM5C"
     },
     {
       "id": "toss-1901664999",
@@ -5406,6 +6680,32 @@
       "url": "https://toss.im/_m/vk4ehFcx"
     },
     {
+      "id": "toss-1993327405",
+      "tacaItemId": 1993327405,
+      "brand": "썬키스트",
+      "name": "사과주스, 1.35L, 12개",
+      "fullName": "썬키스트 사과주스, 1.35L, 12개",
+      "img": "https://shopping.toss.im/live/taca/ai/YTcyYmM3/WS9Cazhkd1B0d2NoK0JqYzlnZm5jeG4rR1l6dUVlWnpGNjRaak9oeDVuTT0.png",
+      "price": 11900,
+      "orig": 25900,
+      "dc": 54,
+      "reviews": 610,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 4,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/plmol20w"
+    },
+    {
       "id": "toss-2274321355",
       "tacaItemId": 2274321355,
       "brand": "미라네주방",
@@ -5422,7 +6722,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 72,
+      "todayRank": 74,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -5571,7 +6871,7 @@
       "price": 10900,
       "orig": 23900,
       "dc": 54,
-      "reviews": 4950,
+      "reviews": 4953,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -5586,6 +6886,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/Z373J3g2"
+    },
+    {
+      "id": "toss-2392805437",
+      "tacaItemId": 2392805437,
+      "brand": "올네스트",
+      "name": "퍼퓸 건조기 시트 섬유유연제 플로럴부케, 80매, 1개",
+      "fullName": "올네스트 퍼퓸 건조기 시트 섬유유연제 플로럴부케, 80매, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/YjY0NWM5/QU40NWRzbWRNYzhtT1RsczVtNTVOTW5PZVpadWFhWk1aam5NTTV2TEpOczU.png",
+      "price": 6900,
+      "orig": 14900,
+      "dc": 53,
+      "reviews": 13,
+      "score": 4.5,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 50,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/f6nGgqwx"
     },
     {
       "id": "toss-525669803",
@@ -5640,6 +6966,32 @@
       "url": "https://toss.im/_m/nVxYYqSD"
     },
     {
+      "id": "toss-2645851967",
+      "tacaItemId": 2645851967,
+      "brand": "올바른",
+      "name": "파로 효소 골드, 30포, 6박스",
+      "fullName": "올바른 파로 효소 골드, 30포, 6박스",
+      "img": "https://shopping.toss.im/live/temp/2026-09-04/4635d91d-604a-406a-9ea5-5525dd42c61d.jpeg",
+      "price": 37905,
+      "orig": 79900,
+      "dc": 52,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 42,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/jL985YdB"
+    },
+    {
       "id": "toss-2625579005",
       "tacaItemId": 2625579005,
       "brand": "이롬",
@@ -5656,7 +7008,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 18,
+      "todayRank": 45,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -5682,7 +7034,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 74,
+      "todayRank": 78,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -5874,6 +7226,58 @@
       "url": "https://toss.im/_m/pmr0O8ki"
     },
     {
+      "id": "toss-2611023403",
+      "tacaItemId": 2611023403,
+      "brand": "에이징그라운드",
+      "name": "특제 양념 돼지 목살 왕구이, 500g, 2팩",
+      "fullName": "에이징그라운드 특제 양념 돼지 목살 왕구이, 500g, 2팩",
+      "img": "https://shopping.toss.im/live/temp/2026-08-14/37e01ed1-768b-4559-80bd-42cdc65a2072.jpeg",
+      "price": 11900,
+      "orig": 23800,
+      "dc": 50,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 15,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/RmIZDcj2"
+    },
+    {
+      "id": "toss-1509864929",
+      "tacaItemId": 1509864929,
+      "brand": "허블리",
+      "name": "사이드 핀턱 와이드 밴딩 팬츠, 그레이, S, 1개",
+      "fullName": "허블리 사이드 핀턱 와이드 밴딩 팬츠, 그레이, S, 1개",
+      "img": "https://shopping.toss.im/live/temp/2026-04-13/60efec3d-c048-4937-bbf6-a18ac56b29f4.jpeg",
+      "price": 14356,
+      "orig": 28900,
+      "dc": 50,
+      "reviews": 20,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 25,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/NUxxcptC"
+    },
+    {
       "id": "toss-258558169",
       "tacaItemId": 258558169,
       "brand": "신영",
@@ -5890,7 +7294,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 71,
+      "todayRank": 72,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6108,6 +7512,58 @@
       "url": "https://toss.im/_m/BBBbDwIp"
     },
     {
+      "id": "toss-1156549119",
+      "tacaItemId": 1156549119,
+      "brand": "색변화",
+      "name": "하트 말랑이 2세대, 1개",
+      "fullName": "색변화 하트 말랑이 2세대, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/NmMyYTUz/QU9iYzBsK2x0ekxNWnptZUtiSENrbGpPTlh0bG43RnBmUndnYllkNFVvRDg.png",
+      "price": 4600,
+      "orig": 6200,
+      "dc": 50,
+      "reviews": 7,
+      "score": 4.1,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 16,
+      "catId": 29475,
+      "cat": "완구/취미",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/TUAwCRQA"
+    },
+    {
+      "id": "toss-2605886919",
+      "tacaItemId": 2605886919,
+      "brand": "아우페",
+      "name": "에어리브 차량용 고체탈취제, 허그데오코튼, 250g, 1개",
+      "fullName": "아우페 에어리브 차량용 고체탈취제, 허그데오코튼, 250g, 1개",
+      "img": "https://shopping.toss.im/live/temp/2026-08-12/c3a3b976-2578-413b-9421-d8a5e563d840.jpeg",
+      "price": 9900,
+      "orig": 20000,
+      "dc": 50,
+      "reviews": 50,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 18,
+      "catId": 29635,
+      "cat": "자동차용품",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/RmfR2Dse"
+    },
+    {
       "id": "toss-23601",
       "tacaItemId": 23601,
       "brand": "가쯔",
@@ -6176,7 +7632,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 17,
+      "todayRank": 22,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6184,32 +7640,6 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/7esPJCw4"
-    },
-    {
-      "id": "toss-132723801",
-      "tacaItemId": 132723801,
-      "brand": "널담",
-      "name": "뚱낭시에, 50g, 8개입, 1박스",
-      "fullName": "널담 뚱낭시에, 50g, 8개입, 1박스",
-      "img": "https://shopping.toss.im/live/taca/ai/NWFjY2Jl/QU1ubm1XMXJNa2c4eFBJMVlUWjVpbWZHVXNOYXlOaDQ4RkRUYmRNOGJoNDk.png",
-      "price": 9500,
-      "orig": 18900,
-      "dc": 49,
-      "reviews": 1899,
-      "score": 4.7,
-      "soldOut": false,
-      "endAt": "2026-09-05T23:59:59+09:00",
-      "sources": [
-        "today"
-      ],
-      "todayRank": 27,
-      "bestRank": 0,
-      "catRank": 0,
-      "catId": 0,
-      "cat": "",
-      "rankDelta": null,
-      "isNew": false,
-      "url": "https://toss.im/_m/JsLesiY6"
     },
     {
       "id": "toss-2508239119",
@@ -6228,7 +7658,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 33,
+      "todayRank": 32,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6236,6 +7666,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/rzaC0mSa"
+    },
+    {
+      "id": "toss-132723801",
+      "tacaItemId": 132723801,
+      "brand": "널담",
+      "name": "뚱낭시에, 50g, 8개입, 1박스",
+      "fullName": "널담 뚱낭시에, 50g, 8개입, 1박스",
+      "img": "https://shopping.toss.im/live/taca/ai/NWFjY2Jl/QU1ubm1XMXJNa2c4eFBJMVlUWjVpbWZHVXNOYXlOaDQ4RkRUYmRNOGJoNDk.png",
+      "price": 9500,
+      "orig": 18900,
+      "dc": 49,
+      "reviews": 1900,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 38,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/JsLesiY6"
     },
     {
       "id": "toss-2018290237",
@@ -6280,7 +7736,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 9,
+      "todayRank": 7,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6306,7 +7762,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 84,
+      "todayRank": 86,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6496,6 +7952,58 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/ZlM1LqJp"
+    },
+    {
+      "id": "toss-128463155",
+      "tacaItemId": 128463155,
+      "brand": "홍주부",
+      "name": "옛날 미숫가루, 500g, 2개",
+      "fullName": "홍주부 옛날 미숫가루, 500g, 2개",
+      "img": "https://shopping.toss.im/live/temp/2025-06-25/647c8b97-69e7-415a-a410-c2d189d643ca.jpeg",
+      "price": 9900,
+      "orig": 18900,
+      "dc": 47,
+      "reviews": 160,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 10,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/TBUoefj7"
+    },
+    {
+      "id": "toss-2641047457",
+      "tacaItemId": 2641047457,
+      "brand": "농가살리기",
+      "name": "한입 삼겹살, 300g, 5팩",
+      "fullName": "농가살리기 한입 삼겹살, 300g, 5팩",
+      "img": "https://shopping.toss.im/live/temp/2026-08-31/5ba219d6-7cab-4f93-9cb3-837dfb20eee1.jpeg",
+      "price": 19900,
+      "orig": 37900,
+      "dc": 47,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 21,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/r52YFx3b"
     },
     {
       "id": "toss-2526360533",
@@ -6696,7 +8204,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 1,
+      "todayRank": 24,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6722,7 +8230,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 6,
+      "todayRank": 37,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6748,7 +8256,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 10,
+      "todayRank": 40,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -6810,6 +8318,32 @@
       "url": "https://toss.im/_m/JGVnR2v8"
     },
     {
+      "id": "toss-1470816931",
+      "tacaItemId": 1470816931,
+      "brand": "바론",
+      "name": "이지풋프로 반려동물 발바닥 바리깡, 샌드베이지, 1개",
+      "fullName": "바론 이지풋프로 반려동물 발바닥 바리깡, 샌드베이지, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/OTVmNGRl/T2l1YlM4dGJ1M3kvbENTMkZLU0VpMHBiMjJtKzIzeTJwYVFVbHFVa1drRT0.png",
+      "price": 21400,
+      "orig": 39900,
+      "dc": 46,
+      "reviews": 64,
+      "score": 4.6,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 20,
+      "catId": 20203,
+      "cat": "반려/애완용품",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/p27IlPJo"
+    },
+    {
       "id": "toss-2375090799",
       "tacaItemId": 2375090799,
       "brand": "맥스앤맥스",
@@ -6834,6 +8368,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/H8KGyjMa"
+    },
+    {
+      "id": "toss-2534876961",
+      "tacaItemId": 2534876961,
+      "brand": "헤라",
+      "name": "블랙 쿠션, 21N1 바닐라, 본품, 15g, 1개",
+      "fullName": "헤라 블랙 쿠션, 21N1 바닐라, 본품, 15g, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/ZDQ2MDk0/ZW0zLzkrbGx3K2VscGwvZkY1Yi9IM29iOFAyaGVYLzVWNm4vUStvRS8vND0.png",
+      "price": 24350,
+      "orig": 45000,
+      "dc": 45,
+      "reviews": 47,
+      "score": 4.7,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 8,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/zaOLdbic"
     },
     {
       "id": "toss-85367385",
@@ -6992,6 +8552,32 @@
       "url": "https://toss.im/_m/5uLwVlQo"
     },
     {
+      "id": "toss-87494483",
+      "tacaItemId": 87494483,
+      "brand": "대한민국농산",
+      "name": "햇 홍찰 찰옥수수, 특대, 2kg, 10개",
+      "fullName": "대한민국농산 햇 홍찰 찰옥수수, 특대, 2kg, 10개",
+      "img": "https://shopping.toss.im/live/taca/ai/ODI0YmNl/QVlUYVF6eUdEZnp1TnBETXgzcmJFOUcvSnp5NTdYZ0tBR0NkY3RidzUrMD0.png",
+      "price": 8900,
+      "orig": 15900,
+      "dc": 44,
+      "reviews": 751,
+      "score": 4.5,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 2,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/npBcF9fh"
+    },
+    {
       "id": "toss-1336008731",
       "tacaItemId": 1336008731,
       "brand": "파테크",
@@ -7008,7 +8594,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 25,
+      "todayRank": 64,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7016,6 +8602,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/p4mUHt2g"
+    },
+    {
+      "id": "toss-12658591",
+      "tacaItemId": 12658591,
+      "brand": "대원제약",
+      "name": "파워 쏘팔메토, 1,000mg, 30캡슐, 2박스",
+      "fullName": "대원제약 파워 쏘팔메토, 1,000mg, 30캡슐, 2박스",
+      "img": "https://shopping.toss.im/live/taca/ai/NDQwZjll/QUxjSmIrSGUwV0pNdVMwOTQyN1UvT2wrU2YrRDNzazhhVzhNLzRONHRJSis.png",
+      "price": 10500,
+      "orig": 18900,
+      "dc": 44,
+      "reviews": 70,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 79,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/ZDvRfpgi"
     },
     {
       "id": "toss-142690113",
@@ -7086,7 +8698,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 8,
+      "todayRank": 34,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7112,7 +8724,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 13,
+      "todayRank": 58,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7120,6 +8732,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/DtaCZ488"
+    },
+    {
+      "id": "toss-2635824139",
+      "tacaItemId": 2635824139,
+      "brand": "홈파워",
+      "name": "올스텐 인덕션 2단 찜기, 28cm, 1개",
+      "fullName": "홈파워 올스텐 인덕션 2단 찜기, 28cm, 1개",
+      "img": "https://shopping.toss.im/live/temp/2026-08-25/8d0058f9-7646-4761-a141-05485de1c815.jpeg",
+      "price": 21900,
+      "orig": 38900,
+      "dc": 43,
+      "reviews": 2,
+      "score": 5.0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 80,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/9oXnnQvj"
     },
     {
       "id": "toss-1951368473",
@@ -7216,7 +8854,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 5,
+      "todayRank": 70,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7250,6 +8888,84 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/xo5AgR97"
+    },
+    {
+      "id": "toss-128564521",
+      "tacaItemId": 128564521,
+      "brand": "일감생활",
+      "name": "인체공학 고탄력 슬개골 무릎보호대, FREE, 1개",
+      "fullName": "일감생활 인체공학 고탄력 슬개골 무릎보호대, FREE, 1개",
+      "img": "https://shopping.toss.im/live/temp/2025-03-05/1fc9ecca-001b-495e-b6a8-967eac937d15.jpeg",
+      "price": 9400,
+      "orig": 16400,
+      "dc": 42,
+      "reviews": 187,
+      "score": 4.2,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 20,
+      "catId": 24215,
+      "cat": "스포츠/레져",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/Ljg7zko4"
+    },
+    {
+      "id": "toss-2604639603",
+      "tacaItemId": 2604639603,
+      "brand": "다농원",
+      "name": "호두 아몬드 율무차, 18g, 40포, 1개",
+      "fullName": "다농원 호두 아몬드 율무차, 18g, 40포, 1개",
+      "img": "https://shopping.toss.im/live/temp/2026-08-06/5e73dfde-df66-4d8f-b212-b9297a649fcf.jpeg",
+      "price": 8800,
+      "orig": 15000,
+      "dc": 41,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 47,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/PwOD7cZp"
+    },
+    {
+      "id": "toss-87664267",
+      "tacaItemId": 87664267,
+      "brand": "언뮤트",
+      "name": "하이드로 카밍 워터 젤 폼클렌저, 200ml, 1개",
+      "fullName": "언뮤트 하이드로 카밍 워터 젤 폼클렌저, 200ml, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/MmFlOWRl/Q09UbWMvY2JHSXlGNUZlRFdwV3NlcVZKVllWV3VxclZoVUdWS1ZTdGFyVT0.png",
+      "price": 12800,
+      "orig": 22000,
+      "dc": 41,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 89,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/v2RgfDer"
     },
     {
       "id": "toss-2514873561",
@@ -7287,7 +9003,7 @@
       "price": 9900,
       "orig": 16900,
       "dc": 41,
-      "reviews": 240,
+      "reviews": 241,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -7391,14 +9107,14 @@
       "price": 11900,
       "orig": 19900,
       "dc": 40,
-      "reviews": 875,
+      "reviews": 876,
       "score": 4.4,
       "soldOut": false,
       "endAt": "2026-09-05T23:59:59+09:00",
       "sources": [
         "today"
       ],
-      "todayRank": 16,
+      "todayRank": 9,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7564,6 +9280,84 @@
       "url": "https://toss.im/_m/H4lZpbix"
     },
     {
+      "id": "toss-141953051",
+      "tacaItemId": 141953051,
+      "brand": "매일야채",
+      "name": "고농축 토마토의 힘, 125ml, 24개",
+      "fullName": "매일야채 고농축 토마토의 힘, 125ml, 24개",
+      "img": "https://shopping.toss.im/live/taca/ai/OWFhZjVj/ZUhPMDUrZGV5aDVKTm16bXZFdnRPdEtSTnVFNVRhMDVONDJYNGNlMGFGND0.png",
+      "price": 18800,
+      "orig": 31200,
+      "dc": 39,
+      "reviews": 2612,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 30,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/hcQGXkxs"
+    },
+    {
+      "id": "toss-2071150519",
+      "tacaItemId": 2071150519,
+      "brand": "뚜띠프루티",
+      "name": "우린 올리브 레몬이에오, 15ml, 14포, 1박스",
+      "fullName": "뚜띠프루티 우린 올리브 레몬이에오, 15ml, 14포, 1박스",
+      "img": "https://shopping.toss.im/live/temp/2026-05-21/f26b60ef-08b7-44c9-befb-b3b636c4826f.jpeg",
+      "price": 16900,
+      "orig": 28000,
+      "dc": 39,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 44,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/j3OlVvJt"
+    },
+    {
+      "id": "toss-1279004631",
+      "tacaItemId": 1279004631,
+      "brand": "광천김",
+      "name": "파래생김, 160g 이상, 100매, 1봉",
+      "fullName": "광천김 파래생김, 160g 이상, 100매, 1봉",
+      "img": "https://shopping.toss.im/live/temp/2026-03-27/dabfb83a-cac1-4134-b7c7-d4857061ea81.jpeg",
+      "price": 10900,
+      "orig": 17900,
+      "dc": 39,
+      "reviews": 14,
+      "score": 4.9,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 54,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/v6n7dd2v"
+    },
+    {
       "id": "toss-2482161241",
       "tacaItemId": 2482161241,
       "brand": "쿠킹메이트",
@@ -7625,7 +9419,7 @@
       "price": 11990,
       "orig": 19900,
       "dc": 39,
-      "reviews": 207,
+      "reviews": 208,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -7684,7 +9478,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 20,
+      "todayRank": 3,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7692,6 +9486,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/XD4HQ0ic"
+    },
+    {
+      "id": "toss-2642036543",
+      "tacaItemId": 2642036543,
+      "brand": "",
+      "name": "햇 홍로사과, 중소과, 40과 내외, 5kg, 1박스",
+      "fullName": "햇 홍로사과, 중소과, 40과 내외, 5kg, 1박스",
+      "img": "https://shopping.toss.im/live/temp/2026-09-04/dbb7a735-78b8-47e3-b02d-6b1af6bfd084.png",
+      "price": 18500,
+      "orig": 29900,
+      "dc": 38,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 6,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/xbJykEhw"
     },
     {
       "id": "toss-1036608003",
@@ -7718,6 +9538,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/5a2S43JD"
+    },
+    {
+      "id": "toss-2545449157",
+      "tacaItemId": 2545449157,
+      "brand": "전라도청년",
+      "name": "푸짐한 우거지 감자탕, 1kg, 3팩",
+      "fullName": "전라도청년 푸짐한 우거지 감자탕, 1kg, 3팩",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/ZDgyODdi/QUl4NU0ySXViaDU2L0duWnp3Q1lPZmJ5V3VXSXhQL1g2Z3VoT2dTQ1ZIc1U.png",
+      "price": 16800,
+      "orig": 26900,
+      "dc": 37,
+      "reviews": 2,
+      "score": 4.0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 11,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/Fg1vlf2A"
     },
     {
       "id": "toss-1187499249",
@@ -7788,7 +9634,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 19,
+      "todayRank": 53,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7902,32 +9748,6 @@
       "url": "https://toss.im/_m/7s1DuDo4"
     },
     {
-      "id": "toss-1239471885",
-      "tacaItemId": 1239471885,
-      "brand": "맛꾼",
-      "name": "메추리알 장조림, 1kg, 2개",
-      "fullName": "맛꾼 메추리알 장조림, 1kg, 2개",
-      "img": "https://shopping.toss.im/live/taca/ai/NjFmYmU4/QUpxbTJia1VwdExaUnBzN09DRHFyd3JJeTR6dWRTMXRuOXF6akZQb1VtNjM.png",
-      "price": 12900,
-      "orig": 20000,
-      "dc": 35,
-      "reviews": 3071,
-      "score": 4.5,
-      "soldOut": false,
-      "endAt": "2026-09-05T23:59:59+09:00",
-      "sources": [
-        "today"
-      ],
-      "todayRank": 7,
-      "bestRank": 0,
-      "catRank": 0,
-      "catId": 0,
-      "cat": "",
-      "rankDelta": null,
-      "isNew": false,
-      "url": "https://toss.im/_m/7hU0shrj"
-    },
-    {
       "id": "toss-173706877",
       "tacaItemId": 173706877,
       "brand": "목우촌",
@@ -7944,7 +9764,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 12,
+      "todayRank": 39,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -7952,6 +9772,58 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/tANs4wMy"
+    },
+    {
+      "id": "toss-1239471885",
+      "tacaItemId": 1239471885,
+      "brand": "맛꾼",
+      "name": "메추리알 장조림, 1kg, 2개",
+      "fullName": "맛꾼 메추리알 장조림, 1kg, 2개",
+      "img": "https://shopping.toss.im/live/taca/ai/NjFmYmU4/QUpxbTJia1VwdExaUnBzN09DRHFyd3JJeTR6dWRTMXRuOXF6akZQb1VtNjM.png",
+      "price": 12900,
+      "orig": 20000,
+      "dc": 35,
+      "reviews": 3071,
+      "score": 4.5,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 55,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/7hU0shrj"
+    },
+    {
+      "id": "toss-1775422425",
+      "tacaItemId": 1775422425,
+      "brand": "스타벅스",
+      "name": "카페모먼트 미니컵 세트, 브라이트 2g 6개 + 스무스 2g 6개, 1세트",
+      "fullName": "스타벅스 카페모먼트 미니컵 세트, 브라이트 2g 6개 + 스무스 2g 6개, 1세트",
+      "img": "https://shopping.toss.im/live/temp/2026-04-30/667c3a46-c108-4cd6-8878-20d3514e4941.jpeg",
+      "price": 18500,
+      "orig": 28900,
+      "dc": 35,
+      "reviews": 180,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 56,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/xZN1vU12"
     },
     {
       "id": "toss-1655029655",
@@ -8084,6 +9956,32 @@
       "url": "https://toss.im/_m/vfOubyFj"
     },
     {
+      "id": "toss-866265713",
+      "tacaItemId": 866265713,
+      "brand": "임성근",
+      "name": "뼈없는 갈비탕, 800g, 10팩",
+      "fullName": "임성근 뼈없는 갈비탕, 800g, 10팩",
+      "img": "https://shopping.toss.im/live/taca/ai/Y2VlM2Zl/Vnd4cHN4TXAwMWZhV2ROTjFNa1lqZWFUT3BucWN6TlJZMWtadWFXbVBKWT0.png",
+      "price": 45900,
+      "orig": 69900,
+      "dc": 34,
+      "reviews": 217,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 16,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/fjHU8xv3"
+    },
+    {
       "id": "toss-18528257",
       "tacaItemId": 18528257,
       "brand": "삼보수산",
@@ -8100,7 +9998,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 15,
+      "todayRank": 77,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -8171,7 +10069,7 @@
       "price": 18900,
       "orig": 28800,
       "dc": 34,
-      "reviews": 4598,
+      "reviews": 4599,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -8275,7 +10173,7 @@
       "price": 10500,
       "orig": 15900,
       "dc": 33,
-      "reviews": 3482,
+      "reviews": 3483,
       "score": 4.8,
       "soldOut": false,
       "endAt": "",
@@ -8490,7 +10388,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 22,
+      "todayRank": 41,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -8516,7 +10414,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 90,
+      "todayRank": 91,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -8550,6 +10448,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/BSXLbjvC"
+    },
+    {
+      "id": "toss-2636341265",
+      "tacaItemId": 2636341265,
+      "brand": "더조은",
+      "name": "소백산 사양 벌꿀, 아카시아향 2.4kg, 1개 + 잡화향 2.4kg 1개, 2개",
+      "fullName": "더조은 소백산 사양 벌꿀, 아카시아향 2.4kg, 1개 + 잡화향 2.4kg 1개, 2개",
+      "img": "https://shopping.toss.im/live/temp/2026-08-26/e48ddc97-d8ba-49c9-bc35-eeb4668cc423.jpeg",
+      "price": 35900,
+      "orig": 49900,
+      "dc": 28,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 85,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/5jw37Y36"
     },
     {
       "id": "toss-161285379",
@@ -8734,6 +10658,32 @@
       "url": "https://toss.im/_m/DRmqXKIa"
     },
     {
+      "id": "toss-118554617",
+      "tacaItemId": 118554617,
+      "brand": "테비",
+      "name": "고런치 강아지간식, 고런치 칠면조슬라이스, 1kg, 1개",
+      "fullName": "테비 고런치 강아지간식, 고런치 칠면조슬라이스, 1kg, 1개",
+      "img": "https://shopping.toss.im/live/taca/ai/NmE3YmMw/QVBHUjgyMUd4MjIyKzh1ZTJUdzhjOGJ5NDI4K2kwdVE0V1V4Yko3NlZMTm4.png",
+      "price": 11700,
+      "orig": 15000,
+      "dc": 27,
+      "reviews": 66,
+      "score": 4.8,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 9,
+      "catId": 20203,
+      "cat": "반려/애완용품",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/NyDJ8Pmh"
+    },
+    {
       "id": "toss-2476546969",
       "tacaItemId": 2476546969,
       "brand": "스텔라이브",
@@ -8758,6 +10708,58 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/Z48hzBf2"
+    },
+    {
+      "id": "toss-2608574041",
+      "tacaItemId": 2608574041,
+      "brand": "훈훈수산",
+      "name": "렌지고등어 구이 순살, 300g, 3-4쪽, 1팩",
+      "fullName": "훈훈수산 렌지고등어 구이 순살, 300g, 3-4쪽, 1팩",
+      "img": "https://shopping.toss.im/live/temp/2025-07-01/bfed9447-fee2-4585-8370-12b3c7c348e9.jpeg",
+      "price": 13900,
+      "orig": 18900,
+      "dc": 26,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 12,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/DPvSE6j7"
+    },
+    {
+      "id": "toss-239210779",
+      "tacaItemId": 239210779,
+      "brand": "마그넷",
+      "name": "화이트보드 지우개 RX.T-189, 색상랜덤, 1개",
+      "fullName": "마그넷 화이트보드 지우개 RX.T-189, 색상랜덤, 1개",
+      "img": "https://shopping.toss.im/live/temp/2025-12-24/988eaf52-10a7-45be-87d5-a4652dbc6917.jpeg",
+      "price": 4270,
+      "orig": 4610,
+      "dc": 25,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 2,
+      "catId": 16503,
+      "cat": "문구/오피스",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/j1iuNAnj"
     },
     {
       "id": "toss-231194857",
@@ -8810,6 +10812,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/LJoCNAHn"
+    },
+    {
+      "id": "toss-378975681",
+      "tacaItemId": 378975681,
+      "brand": "루트엑스",
+      "name": "MIYAGE 레터링 루즈핏 댄스 바지, 블랙, M",
+      "fullName": "루트엑스 MIYAGE 레터링 루즈핏 댄스 바지, 블랙, M",
+      "img": "https://shopping.toss.im/live/temp/2025-12-02/e40e7da5-8ee8-4e24-9584-4169199d7610.jpeg",
+      "price": 31900,
+      "orig": 41900,
+      "dc": 25,
+      "reviews": 0,
+      "score": 0,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 3,
+      "catId": 60075,
+      "cat": "여행/취미",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/fLKmh87l"
     },
     {
       "id": "toss-74593",
@@ -8914,6 +10942,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/Z5JtR0lC"
+    },
+    {
+      "id": "toss-738539917",
+      "tacaItemId": 738539917,
+      "brand": "직접푸드",
+      "name": "황제 LA 꽃갈비, 2kg, 1팩",
+      "fullName": "직접푸드 황제 LA 꽃갈비, 2kg, 1팩",
+      "img": "https://shopping.toss.im/live/taca/ai/MTgyMDE1/QUxtWG8zTkxOaE5YUEprdHVhbmlwTkZ0RjVRemRiWm9zaE9XWnRrMldyTlA.png",
+      "price": 49600,
+      "orig": 63900,
+      "dc": 22,
+      "reviews": 99,
+      "score": 4.2,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 51,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/NQOSBhv8"
     },
     {
       "id": "toss-981501599",
@@ -9081,7 +11135,7 @@
       "price": 10900,
       "orig": 13900,
       "dc": 21,
-      "reviews": 12493,
+      "reviews": 12496,
       "score": 4.7,
       "soldOut": false,
       "endAt": "",
@@ -9114,7 +11168,7 @@
       "sources": [
         "today"
       ],
-      "todayRank": 86,
+      "todayRank": 88,
       "bestRank": 0,
       "catRank": 0,
       "catId": 0,
@@ -9332,6 +11386,32 @@
       "url": "https://toss.im/_m/NdcNiQHi"
     },
     {
+      "id": "toss-1860433181",
+      "tacaItemId": 1860433181,
+      "brand": "아이스쿨",
+      "name": "시어서커 여름 쿨토시, 핑크",
+      "fullName": "아이스쿨 시어서커 여름 쿨토시, 핑크",
+      "img": "https://shopping.toss.im/live/taca/ai/YWM4YmRh/UUVPcXFxZFJvc1ZaWmFteGxKb3N2cm9vVGc1SHFvY0dDeDlYS2tPVXc4WT0.png",
+      "price": 7900,
+      "orig": 8970,
+      "dc": 19,
+      "reviews": 72,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 18,
+      "catId": 24215,
+      "cat": "스포츠/레져",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/JmHMl4Np"
+    },
+    {
       "id": "toss-918000813",
       "tacaItemId": 918000813,
       "brand": "에코벨",
@@ -9384,6 +11464,32 @@
       "url": "https://toss.im/_m/nn1NYj9n"
     },
     {
+      "id": "toss-1964235765",
+      "tacaItemId": 1964235765,
+      "brand": "건어물천국",
+      "name": "마른오징어 몸통, 특대, 500g, 1봉",
+      "fullName": "건어물천국 마른오징어 몸통, 특대, 500g, 1봉",
+      "img": "https://shopping.toss.im/live/taca/ai/YjFhNDJl/QU9HbVU2NkY2RnFsNGRhdGFhWHd0VFllQytoUkduSkdxYVZhb1Y1ZUhwRDA.png",
+      "price": 25870,
+      "orig": 31900,
+      "dc": 18,
+      "reviews": 10,
+      "score": 4.4,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 1,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/5CDzM8jc"
+    },
+    {
       "id": "toss-1731514329",
       "tacaItemId": 1731514329,
       "brand": "미스터추추",
@@ -9434,6 +11540,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/VjfYmtpD"
+    },
+    {
+      "id": "toss-673791663",
+      "tacaItemId": 673791663,
+      "brand": "화영푸드",
+      "name": "단팥빵, 95g, 10개",
+      "fullName": "화영푸드 단팥빵, 95g, 10개",
+      "img": "https://shopping.toss.im/live/taca/ai/v2/ODhjZWVl/QVBabVZHZkppZEVUcEptbVJIcDVML1JiNXJyNUZ3TmtoL1FZVzIrbFVhV1E.png",
+      "price": 10900,
+      "orig": 13000,
+      "dc": 16,
+      "reviews": 116,
+      "score": 4.2,
+      "soldOut": false,
+      "endAt": "2026-09-05T23:59:59+09:00",
+      "sources": [
+        "today"
+      ],
+      "todayRank": 20,
+      "bestRank": 0,
+      "catRank": 0,
+      "catId": 0,
+      "cat": "",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/tVxOZcNe"
     },
     {
       "id": "toss-204196325",
@@ -10214,6 +12346,32 @@
       "rankDelta": null,
       "isNew": false,
       "url": "https://toss.im/_m/173oKh9l"
+    },
+    {
+      "id": "toss-106805361",
+      "tacaItemId": 106805361,
+      "brand": "아이워너",
+      "name": "뷰티 육각 덤벨, 5kg_블루베리, 2개입, 1세트",
+      "fullName": "아이워너 뷰티 육각 덤벨, 5kg_블루베리, 2개입, 1세트",
+      "img": "https://shopping.toss.im/live/taca/ai/YjllMWE1/QUxKNW1QbEp0S2NrYzBkcEhtWU1ONWF0Yk96Mi9Nek9XNUcwVVBFbVdhME8.png",
+      "price": 27160,
+      "orig": 28900,
+      "dc": 6,
+      "reviews": 7,
+      "score": 4.9,
+      "soldOut": false,
+      "endAt": "",
+      "sources": [
+        "category"
+      ],
+      "todayRank": 0,
+      "bestRank": 0,
+      "catRank": 6,
+      "catId": 24215,
+      "cat": "스포츠/레져",
+      "rankDelta": null,
+      "isNew": false,
+      "url": "https://toss.im/_m/JpvcZy6r"
     },
     {
       "id": "toss-1132824567",
