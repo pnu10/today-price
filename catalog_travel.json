@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -6176,11 +6176,33 @@
       "superweek": false,
       "url": "https://naver.me/xuFVRCR2",
       "addedAt": "2026-09-04"
+    },
+    {
+      "id": "tc-FqIzRmjV",
+      "region": "서안",
+      "country": "",
+      "name": "출발확정[KE][NO팁/NO옵션] 서안+화산(서봉+남봉)+4대 야경 3박 4일 5성급 힐튼 (롯데관광 단독계약)",
+      "duration": "3박4일",
+      "ptype": "해외패키지",
+      "origPrice": 1359000,
+      "salePrice": 1318230,
+      "discount": 3,
+      "confirmed": true,
+      "noOption": true,
+      "tags": [
+        "야경",
+        "5성"
+      ],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMDVfMjg5/MDAxNzcyNjkwNjY2NDk4.mkY8KtZpjwbY8sj3YAr5xASKdQhvkOEMh1xPu8NHj6cg._Dlj8FU2i7vdGysT-Kt_dR_WHfI4mZ40kDt1Hruu-Qog.PNG/227b2a2a4d0c56d5b0f10587e21e6f30.tn.720x480.png",
+      "category": "미국",
+      "superweek": false,
+      "url": "https://naver.me/FqIzRmjV",
+      "addedAt": "2026-09-05"
     }
   ],
   "promo": {
     "title": "슈퍼위크",
     "period": "08/24(월) ~ 09/06(일)",
-    "updatedAt": "2026-09-04 23:05"
+    "updatedAt": "2026-09-05 22:52"
   }
 }
