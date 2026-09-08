@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-08",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -777,7 +777,7 @@
       "tags": [],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA0MTVfNTEg/MDAxNzc2MjI4MDgyMDA0.1TEZq4amMKWoFsxBTeIZd0z8wDkByqe1NrwOo3FOdIwg.VG_aeVQy4Q2UdkJarz7fgunFbSA0iNuPOqO10sYe4oMg.JPEG/1927920.jpg",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/FetEWQY4",
       "addedAt": "2026-08-27"
     },
@@ -799,7 +799,7 @@
       ],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMDlfMjU1/MDAxNzczMDUyMzQwNDA0.ksv3aKT8PhUyvTTgaXkRhI1S_bSYqgM5hikmvwcT7Jog.wWyqYqv2ZQvm21e6fixJRqodYivfOai7uBhf2rVvYvcg.JPEG/38481770.jpg",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/FQueO0cb",
       "addedAt": "2026-08-27"
     },
@@ -822,7 +822,7 @@
       ],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA4MTJfMjQx/MDAxNzg2NTIwNDM0NTM0.zJdOFxNkzHnVx2CEX4l53A7V-A9drigSKcFFocYmq3Eg.lbZfToGj4OFbm7f4UjuUumx2m4nmqtMTtyI-ivfV0_gg.PNG/e6010bc6-563c-404c-a730-5658ff4c3d50.png",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/F6QegYjX",
       "addedAt": "2026-08-27"
     },
@@ -841,7 +841,7 @@
       "tags": [],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA4MTJfNDcg/MDAxNzg2NTAyMTk1OTI0.kXMwOtO0b90im7plfHRmxwcN7aPOB7O2nKWQscexXuog.I14T1Umk25wPAGaPdoTGWlzcU4a3-74qiBhK7umO7n8g.JPEG/51774e16e3c44ea4abeb20ed2e85e5bd.jpg",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/GlRcbTRi",
       "addedAt": "2026-08-27"
     },
@@ -863,7 +863,7 @@
       ],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA4MTJfMjk2/MDAxNzg2NTA1MzAzMzIy.1KKWeNgEfkiC0Em_xNqpipHaGCJrBn0XfPRHSMECNfsg.pYzSBjMr7Prm_9pAdRUAY_AaVIlvyFY1rfs7xiM3r90g.JPEG/%EC%A7%80%EC%9A%B0%ED%8E%80-min%2B-%2B%EB%B3%B5%EC%82%AC%EB%B3%B8.jpg",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/5mvQutfW",
       "addedAt": "2026-08-27"
     },
@@ -882,7 +882,7 @@
       "tags": [],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMDlfMTg1/MDAxNzczMDQxNDE3Njg0.5mS2TtxkYnM181Df6B4khQ9gbU7QcZRRvtWkjqXKjWog.n-X4A8VzFMrsmtZE2Inmlj8TFfEPPdHJpaoEDtZOk8Yg.JPEG/8a91f565da22c189f59ef8fbb5435b30.tn.900x657.jpg",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/Gwfyc4A2",
       "addedAt": "2026-08-27"
     },
@@ -903,7 +903,7 @@
       ],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA4MTBfMTM2/MDAxNzg2MzYxNDc2Njk0.d7X0_LAQC7acEFqWwMJ7TfYH4Nb8-NcGq5F3INfUUuUg.ZjuQcysRiW6XUqRtyiIjo1qTeTody4iNKPJasMqJykkg.JPEG/37f504b8-9f78-40e4-9c6d-232655b95c24.jpg",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/FNt0Zj21",
       "addedAt": "2026-08-27"
     },
@@ -924,7 +924,7 @@
       ],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA4MTJfMjYg/MDAxNzg2NTE1MTI2Nzkx.Z7ahugqWoltmceCGlLYQRibtr03VgnGGQbpxFG5m6lMg.w0fkJXvH_WRU6SvX7LuPbaCEabj8MZwii2PfRPYUmygg.PNG/638614999208587661.png",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/xSBy30SK",
       "addedAt": "2026-08-27"
     },
@@ -943,7 +943,7 @@
       "tags": [],
       "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMDhfMTMx/MDAxNzcyODk1NzAyODE4.lvkCX_jl--_6sP2Qvq4V80DIrKFMBSTnEYGp8drPsukg.fdVoWSp6BkywzOMMI5HFE77wt6ecOOG8as_E2MIBukIg.PNG/2011214.png",
       "category": "슈퍼위크",
-      "superweek": true,
+      "superweek": false,
       "url": "https://naver.me/FHO9kEr9",
       "addedAt": "2026-08-27"
     },
@@ -6198,6 +6198,46 @@
       "superweek": false,
       "url": "https://naver.me/FqIzRmjV",
       "addedAt": "2026-09-05"
+    },
+    {
+      "id": "tc-FiP2KjSi",
+      "region": "동남아",
+      "country": "",
+      "name": "마쓰야마 3일 [자유여행][오전출발][대욕장보유] 카츠야마프리미어호텔 [파이널특가]",
+      "duration": "2박3일",
+      "ptype": "자유여행",
+      "origPrice": 599000,
+      "salePrice": 569050,
+      "discount": 5,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMTFfMjIx/MDAxNzczMTU4MDU0MjUy.O9LfUEZNWPoaxUrNfLWI4frhCzH5uB92ny_Wj4yK6Fkg.AF46JlJxevyYu2OOd90oEmJ92-jXMcEjzMFec47EAzsg.JPEG/f7b5c740-8905-4b01-81e8-c2f4f2f3e622.jpg",
+      "category": "동남아",
+      "superweek": false,
+      "url": "https://naver.me/FiP2KjSi",
+      "addedAt": "2026-09-08"
+    },
+    {
+      "id": "tc-Gy306LiC",
+      "region": "시드니",
+      "country": "",
+      "name": "[게릴라특가] 시드니 일주 6일 (전일정4성/수하물23KG)",
+      "duration": "4박6일",
+      "ptype": "해외패키지",
+      "origPrice": 1552000,
+      "salePrice": 1505440,
+      "discount": 3,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [
+        "4성"
+      ],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMjBfNzEg/MDAxNzczOTk4MzU5MzQ0.dbz2EGJdcFi5iSUYDAMY8W6o9m7wHbzJr9A2LTUe218g.gdqwyxJIa7uw3NueUFVK59LoETrsUIetxydIKRJLFAcg.PNG/636616500407616468.png",
+      "category": "괌",
+      "superweek": false,
+      "url": "https://naver.me/Gy306LiC",
+      "addedAt": "2026-09-08"
     }
   ],
   "promo": {
