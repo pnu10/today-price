@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -6238,6 +6238,46 @@
       "superweek": false,
       "url": "https://naver.me/Gy306LiC",
       "addedAt": "2026-09-08"
+    },
+    {
+      "id": "tc-xzHdPdgI",
+      "region": "중국",
+      "country": "",
+      "name": "북경 4일 노팁노옵션노쇼핑 품격여행 TOPPICK",
+      "duration": "3박4일",
+      "ptype": "해외패키지",
+      "origPrice": 1099900,
+      "salePrice": 1044905,
+      "discount": 5,
+      "confirmed": false,
+      "noOption": true,
+      "tags": [
+        "쇼"
+      ],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjAzMTVfMTI5/MDAxNzczNTMzNzEwNzcz.n1VNWF2zqtNMgE3SeQmtVEc_U8_-cj0Azt6umzxalmQg.3QQgZgo6agefgOcdHNuk1VZ7S-hPLLZQSg5j6b49R3wg.JPEG/37666145.jpg",
+      "category": "중국",
+      "superweek": false,
+      "url": "https://naver.me/xzHdPdgI",
+      "addedAt": "2026-09-09"
+    },
+    {
+      "id": "tc-GDQ4R4xi",
+      "region": "하와이",
+      "country": "",
+      "name": "하와이 하얏트리젠시 오션프론트 4박6일 <섬일주/별빛투어>",
+      "duration": "4박6일",
+      "ptype": "허니문",
+      "origPrice": 4202000,
+      "salePrice": 4075940,
+      "discount": 3,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [],
+      "image": "https://pkgtour-phinf.pstatic.net/MjAyNjA1MTVfNTUg/MDAxNzc4Nzk1MDI5ODIy.6p3h4DKwT4ftdoXGSpnfYbR6AfWzr0izHsND0S4YXMog.bBd5oY6X_QvIgU3kXI9qmSS9VohnRtvfOEWK_pY6hPgg.PNG/22403120.png",
+      "category": "미국",
+      "superweek": false,
+      "url": "https://naver.me/GDQ4R4xi",
+      "addedAt": "2026-09-09"
     }
   ],
   "promo": {
