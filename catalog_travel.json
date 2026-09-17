@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-17",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -6755,6 +6755,48 @@
       "superweek": false,
       "url": "https://naver.me/FORQPZwf",
       "addedAt": "2026-09-13"
+    },
+    {
+      "id": "tc-G4dh1wwE",
+      "region": "동유럽",
+      "country": "",
+      "name": "동유럽 3개국 9일 체오헝 / 직항 / 프라하 야경 유람선, 이색 소도시, 클림트 ' 키스 '",
+      "duration": "8박9일",
+      "ptype": "해외패키지",
+      "origPrice": 2970000,
+      "salePrice": 2821500,
+      "discount": 5,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [
+        "야경"
+      ],
+      "image": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fpkgtour-phinf.pstatic.net%2FMjAyNjAzMDVfMTg5%2FMDAxNzcyNzAzMTc2MzIw.IDtOsfXJCrNQCSmsE8gsOH5uozoYeaQsR_kbI0R2JT8g.pbkCz6Wni91kg2DG7xbk4GJr8gy8RPxkyaJoEAPKB20g.JPEG%2F1977555.jpg%22&type=brandconnect_f500_500_product",
+      "category": "유럽",
+      "superweek": false,
+      "url": "https://naver.me/G4dh1wwE",
+      "addedAt": "2026-09-17"
+    },
+    {
+      "id": "tc-GFsUtnYv",
+      "region": "대만",
+      "country": "",
+      "name": "실시간항공/출발확정[노팁/노쇼핑/노옵션] 대만 4일 호텔UP 핵심투어 101빌딩",
+      "duration": "3박4일",
+      "ptype": "해외패키지",
+      "origPrice": 1199000,
+      "salePrice": 1139050,
+      "discount": 5,
+      "confirmed": true,
+      "noOption": true,
+      "tags": [
+        "쇼"
+      ],
+      "image": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fpkgtour-phinf.pstatic.net%2FMjAyNjAzMDlfMTQw%2FMDAxNzczMDM1MzI3MzYy._RkSH6U_y7wY5eewxLCiLb2QjH7XOXvf_UlR_4xSYE0g.Xh6OjuruPuzKUWzBE7-PzkNaBLlBj8PMuJfInOstX0cg.JPEG%2F36933766.jpg%22&type=brandconnect_f500_500_product",
+      "category": "인기",
+      "superweek": false,
+      "url": "https://naver.me/GFsUtnYv",
+      "addedAt": "2026-09-17"
     }
   ],
   "promo": {
