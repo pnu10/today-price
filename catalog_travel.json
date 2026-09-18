@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-18",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -6797,6 +6797,48 @@
       "superweek": false,
       "url": "https://naver.me/GFsUtnYv",
       "addedAt": "2026-09-17"
+    },
+    {
+      "id": "tc-xrz38cAg",
+      "region": "시드니",
+      "country": "",
+      "name": "시드니 일주 7일 (전일정4성/수하물23KG)",
+      "duration": "5박7일",
+      "ptype": "해외패키지",
+      "origPrice": 1609000,
+      "salePrice": 1560730,
+      "discount": 3,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [
+        "4성"
+      ],
+      "image": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fpkgtour-phinf.pstatic.net%2FMjAyNjAzMDdfMTAw%2FMDAxNzcyODcwNjE1Mzgx.HHe_GW-kIY4DH5JJb7NOHJpzbhPDc5Ed8rFkzNWnYDUg.2v_dtUK-B5Cyf8Hn5PwE8-Ynf_TP3QvsXEaGD7PKDC4g.JPEG%2F638169157056238032.jpg%22&type=brandconnect_f500_500_product",
+      "category": "괌",
+      "superweek": false,
+      "url": "https://naver.me/xrz38cAg",
+      "addedAt": "2026-09-18"
+    },
+    {
+      "id": "tc-5yh7RBQU",
+      "region": "삿포로",
+      "country": "",
+      "name": "[부산/오후출발][온천호텔 숙박] 도야/노보리베츠/비에이/후라노/오타루/삿포로 4일",
+      "duration": "3박4일",
+      "ptype": "해외패키지",
+      "origPrice": 1022000,
+      "salePrice": 991340,
+      "discount": 3,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [
+        "온천"
+      ],
+      "image": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fpkgtour-phinf.pstatic.net%2FMjAyNjAzMDZfMTA5%2FMDAxNzcyNzU4NTc5NzE4.m7ApOHrvFv3IkqlG1ZWLrLliMvjQfEPRg5-F79-I9Hgg.J5MJEOxpmWMScyZJFqpLdlaZcEoax-UlNVPlN3PMCtAg.JPEG%2F1927691.jpg%22&type=brandconnect_f500_500_product",
+      "category": "일본",
+      "superweek": false,
+      "url": "https://naver.me/5yh7RBQU",
+      "addedAt": "2026-09-18"
     }
   ],
   "promo": {
