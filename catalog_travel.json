@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20",
+  "updatedAt": "2026-09-21",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -6921,6 +6921,46 @@
       "superweek": false,
       "url": "https://naver.me/GM3OkurM",
       "addedAt": "2026-09-20"
+    },
+    {
+      "id": "tc-5kPWO5Hg",
+      "region": "일본",
+      "country": "",
+      "name": "5성 월드체인 38만원 상당 혜택 비경투어+롯데전망대 미슐랭 맛집 5일",
+      "duration": "3박5일",
+      "ptype": "해외패키지",
+      "origPrice": 599000,
+      "salePrice": 569050,
+      "discount": 5,
+      "confirmed": false,
+      "noOption": true,
+      "tags": [
+        "5성"
+      ],
+      "image": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fpkgtour-phinf.pstatic.net%2FMjAyNjA0MjNfMTQ0%2FMDAxNzc2OTI1MzI0Nzk0.HSrq6blCgjqMmMGpKF0Jm9L--QPOBnOB-fKm5pAFFc0g.FazXh631QTVPI0Ma-EbEfZUtjTRTu7cbRqZ8sT5ywWkg.JPEG%2F2018354.jpg%22&type=brandconnect_f500_500_product",
+      "category": "일본",
+      "superweek": false,
+      "url": "https://naver.me/5kPWO5Hg",
+      "addedAt": "2026-09-21"
+    },
+    {
+      "id": "tc-5zUrSVYd",
+      "region": "프랑스",
+      "country": "",
+      "name": "영국 X 프랑스 2개국 9일 몽생미셸 코츠월드 고흐마을 옥스퍼드",
+      "duration": "8박9일",
+      "ptype": "해외패키지",
+      "origPrice": 4270000,
+      "salePrice": 4070000,
+      "discount": 4,
+      "confirmed": false,
+      "noOption": false,
+      "tags": [],
+      "image": null,
+      "category": "유럽",
+      "superweek": false,
+      "url": "https://naver.me/5zUrSVYd",
+      "addedAt": "2026-09-21"
     }
   ],
   "promo": {
