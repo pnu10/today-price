@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22",
+  "updatedAt": "2026-09-24",
   "source": "travel-connect",
   "note": "여행 커넥트에서 발급받은 딜. travel-sync.js 가 채운다. 아래는 초기 목업(방콕 2건은 실발급).",
   "deals": [
@@ -6961,6 +6961,50 @@
       "superweek": false,
       "url": "https://naver.me/5zUrSVYd",
       "addedAt": "2026-09-21"
+    },
+    {
+      "id": "tc-GxrYfsJW",
+      "region": "대만",
+      "country": "",
+      "name": "출발확정[김포][노쇼핑/월드체인호텔 UP] 대만 4일 지우펀야경 101빌딩",
+      "duration": "3박4일",
+      "ptype": "해외패키지",
+      "origPrice": 799000,
+      "salePrice": 759050,
+      "discount": 5,
+      "confirmed": true,
+      "noOption": false,
+      "tags": [
+        "쇼",
+        "야경"
+      ],
+      "image": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fpkgtour-phinf.pstatic.net%2FMjAyNjAzMDZfMTA5%2FMDAxNzcyNzcyODc3MjMx.ancvLU7yiW4KMGesKv9GGMMOVqapJ5ctxHxyMzQ_btQg.6A06VzlUtMhPuAJuqP-Hpt77XQiX2-_oBsbTFvFOOiIg.JPEG%2F1857419.jpg%22&type=brandconnect_f500_500_product",
+      "category": "유럽",
+      "superweek": false,
+      "url": "https://naver.me/GxrYfsJW",
+      "addedAt": "2026-09-24"
+    },
+    {
+      "id": "tc-GahSZLGk",
+      "region": "싱가포르",
+      "country": "",
+      "name": "싱가포르 5일 완전특가 전일관광 에메랄드힐 오셔너리움 센토사섬 슈퍼트리쇼 4성호텔 NO쇼핑",
+      "duration": "3박5일",
+      "ptype": "해외패키지",
+      "origPrice": 1209900,
+      "salePrice": 1173603,
+      "discount": 3,
+      "confirmed": true,
+      "noOption": false,
+      "tags": [
+        "쇼",
+        "4성"
+      ],
+      "image": "https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fpkgtour-phinf.pstatic.net%2FMjAyNjA3MTZfMjkz%2FMDAxNzg0MTg3NTgwNTA1.ECDhh0ZAzABv7yXnK0c4RuIfHercz-k5vbUO5kYZEoQg.SypHBwkEY8FP7ZpuYNyWceUV0xBtJPPFkdS3LlXxwx4g.JPEG%2F1a17285b-0a53-4cff-abda-a9787c822c44.jpg%22&type=brandconnect_f500_500_product",
+      "category": "인기",
+      "superweek": false,
+      "url": "https://naver.me/GahSZLGk",
+      "addedAt": "2026-09-24"
     }
   ],
   "promo": {
